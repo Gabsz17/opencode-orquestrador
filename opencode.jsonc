@@ -1,3 +1,16 @@
 {
-  "$schema": "https://opencode.ai/config.json"
+  // Config base do sistema orquestrador. Agents em `agents/*.md` são descobertos automaticamente.
+  // Permissões específicas de cada agent estão no frontmatter; aqui fica só a base segura global.
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "orquestrador",
+  "permission": {
+    "external_directory": "deny",
+    "bash": {
+      "git push --force*": "deny",
+      "git push * --force*": "deny",
+      "git push * -f*": "deny",
+      "git push * --delete*": "deny",
+      "rm -rf*": "deny"
+    }
+  }
 }

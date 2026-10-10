@@ -1,4 +1,13 @@
 {
+  "name": "opencode-orquestrador",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
   "dependencies": {
     "@opencode-ai/plugin": "1.18.21"
   }

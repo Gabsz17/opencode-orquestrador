@@ -52,5 +52,5 @@ Você coordena o time de frontend. Você NÃO implementa (read-only) — delega,
 - Entregue (telas, componentes, store) + arquivos
 - Sub-contrato UI usado + mocks `TODO(mock)` pendentes (arquivo:linha)
 - Bloqueios escalados / decisões tomadas
-- Pronto-para-QA: sim/não + comandos verdes
+- Pronto-para-QA: sim/não + arquivos tocados + comandos verdes
 - Aprendizados do time para a MEMORIA (lições que outros times reaproveitariam)

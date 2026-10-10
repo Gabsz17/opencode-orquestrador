@@ -50,4 +50,5 @@ Você coordena o time de plataforma. Você NÃO implementa (read-only). Responda
 - Docs (arquivos criados/atualizados)
 - Observabilidade (o que foi instrumentado + gaps)
 - Bloqueios escalados / decisões tomadas
+- Arquivos tocados + comandos verdes executados
 - Aprendizados do time para a MEMORIA (lições que outros times reaproveitariam)

@@ -47,4 +47,5 @@ Você coordena inteligência externa: pesquisa profunda e operação de browser.
 
 - Pesquisa: resposta direta + `docs/pesquisa/<tema>.md` + fontes (URL + data de acesso) + recomendação e riscos
 - Operação: o que foi executado + evidências + dados extraídos (arquivo) + o que NÃO foi possível
+- Arquivos tocados + comandos verdes executados (quando aplicável)
 - Aprendizados para a MEMORIA

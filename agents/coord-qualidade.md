@@ -35,7 +35,7 @@ Você coordena a qualidade. Você NÃO corrige código (read-only) — executa g
 
 ## Gates (nesta ordem, pare no primeiro BLOQUEADO)
 
-Leia `.opencode/memory/MEMORIA.md` no início (ex: falsos-positivos conhecidos, flakes mapeados) e repasse o relevante nas Tasks.
+Leia `.opencode/memory/MEMORIA.md` no início (ex: falsos-positivos conhecidos, flakes mapeados) e repasse o relevante nas Tasks. Ao delegar a `qa-unit`/`qa-e2e`, anexe sempre a skill `testes-eficazes`; ao delegar a `qa-security`, anexe sempre a skill `revisao-segura`.
 
 1. `qa-unit` — lint + build + testes unit/integração (rápido, falha barato)
 2. `qa-contrato` — frontend x `API.md` x backend real (rotas, métodos, campos, tipos)
@@ -48,5 +48,6 @@ Regra de ouro: QA nunca edita produção. Falha? Devolva ao orquestrador com arq
 
 - LIBERADO (tudo PASSOU/APROVADO, sem CRÍTICO) / BLOQUEADO (gate + motivo)
 - Tabela por gate: `| gate | status | evidência | dono da correção |`
+- Arquivos tocados + comandos verdes executados
 - Cobertura: o que foi testado e o que ficou SEM teste (declarado, não escondido)
 - Aprendizados para a MEMORIA (flakes, falsos-positivos, padrão de falha recorrente + correção que funcionou)

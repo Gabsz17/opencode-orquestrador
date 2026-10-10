@@ -1,0 +1,4 @@
+node_modules/
+agents-backup-*/
+*.log
+.DS_Store

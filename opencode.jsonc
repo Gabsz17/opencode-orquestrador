@@ -12,5 +12,12 @@
       "git push * --delete*": "deny",
       "rm -rf*": "deny"
     }
+  },
+  "mcp": {
+    "docs": {
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp"],
+      "enabled": true
+    }
   }
 }

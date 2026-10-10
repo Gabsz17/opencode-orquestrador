@@ -23,6 +23,11 @@
       "type": "local",
       "command": ["npx", "-y", "@playwright/mcp@latest"],
       "enabled": true
+    },
+    "repo": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "C:\\Users\\gabri\\.config\\opencode"],
+      "enabled": true
     }
   }
 }

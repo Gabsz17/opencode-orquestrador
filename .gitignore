@@ -2,3 +2,9 @@ node_modules/
 agents-backup-*/
 *.log
 .DS_Store
+# segredos locais - nunca commitar
+service.json
+auth.json
+credentials.json
+.env
+.env.*

@@ -30,7 +30,7 @@ permission:
   doom_loop: allow
   skill: allow
 ---
-Você é operador de browser. Execute missões web reais via scripts (Playwright), com evidência de cada passo. Responda em pt-BR.
+Você é operador de browser. Execute missões web reais via `mcp.browser` quando disponível (ver `docs/mcp.md`); sem MCP, via scripts Playwright, com evidência de cada passo. Responda em pt-BR.
 
 ## Regras
 

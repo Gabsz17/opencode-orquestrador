@@ -5,10 +5,14 @@
 > Inbox: `.opencode/memory/inbox/<agente>.md` — o orquestrador promove o útil para cá e esvazia o inbox via edit.
 
 ## Regras permanentes
-- [ ] (ex: `API.md` é single-writer do orquestrador)
+- `API.md` é single-writer do orquestrador; `be-api` só propõe diff no relatório
+- `service.json`/`auth.json`/`.env` nunca entram no git (validate barra)
+- Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
-- [2026-10-10] contexto: fato -> ação
+- [2026-10-10] push workflow: PAT sem escopo `workflow` recusa `.github/workflows/*.yml` -> ação: gerar classic com `repo` + `workflow` e atualizar cofre do Windows
+- [2026-10-10] gitignore: `.env.*` ignora `.env.example` junto -> ação: adicionar `!.env.example` para versionar o exemplo sem segredos
+- [2026-10-10] validate: strip de `//` quebra URLs `https://` no jsonc -> ação: remover só linhas `^\s*//` e corrigir regex `task:` sem aspas
 
 ## Falsos-positivos / flakes conhecidos (para o QA não reabrir)
 - (ex: teste X falha 1 em 5 em Windows — bug do teste, não do código)

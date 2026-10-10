@@ -14,13 +14,15 @@
 - Sub-contratos dos coords (UI / backend / infra — persistidos aqui pelo orquestrador):
 
 ## 3. Fases (dono `coord-*`)
-| Fase | Dono | Entrada | Saída esperada | Status |
-|------|------|---------|----------------|--------|
-| Ex: API base | coord-backend | API.md v1 | endpoints + migrações | pendente |
-| Ex: Telas | coord-frontend | API.md v1 + sub-contrato UI | telas + store | pendente |
-| Ex: Infra | coord-plataforma | — | dev 1 comando + CI verde | pendente |
-| Ex: Pesquisa | coord-pesquisa | pergunta + critério | briefing com fontes | pendente |
-| Ex: Gates | coord-qualidade | código pronto | LIBERADO | pendente |
+| Fase | Dono | Repo | Entrada | Saída esperada | Status |
+|------|------|------|---------|----------------|--------|
+| Ex: API base | coord-backend | apps/api | API.md v1 | endpoints + migrações | pendente |
+| Ex: Telas | coord-frontend | apps/web | API.md v1 + sub-contrato UI | telas + store | pendente |
+| Ex: Infra | coord-plataforma | . | — | dev 1 comando + CI verde | pendente |
+| Ex: Pesquisa | coord-pesquisa | . | pergunta + critério | briefing com fontes | pendente |
+| Ex: Gates | coord-qualidade | . | código pronto | LIBERADO | pendente |
+
+> Multi-repo/monorepo: 1 linha por repo na coluna `Repo`; ownership de pastas por repo no relatório do coord. Missão federada usa 1 `PLANO.md` na raiz agregadora.
 
 ## 4. Progresso
 - [ ] Contratos fechados

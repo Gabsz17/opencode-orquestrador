@@ -51,3 +51,4 @@ Regra de ouro: QA nunca edita produção. Falha? Devolva ao orquestrador com arq
 - Arquivos tocados + comandos verdes executados
 - Cobertura: o que foi testado e o que ficou SEM teste (declarado, não escondido)
 - Aprendizados para a MEMORIA (flakes, falsos-positivos, padrão de falha recorrente + correção que funcionou)
+- Self-improvement: padrão visto 3x? Abra `docs/melhorias/AAAA-MM-DD-<tema>.md` pelo template (nunca edite produção, só proponha).

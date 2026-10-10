@@ -8,7 +8,8 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "pre-push": "node scripts/pre-push-check.mjs",
-    "eval": "node scripts/eval.mjs"
+    "eval": "node scripts/eval.mjs",
+    "memoria": "node scripts/memoria.mjs"
   },
   "dependencies": {
     "@opencode-ai/plugin": "1.18.21"

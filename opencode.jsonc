@@ -12,12 +12,5 @@
       "git push * --delete*": "deny",
       "rm -rf*": "deny"
     }
-  },
-  // MCP declarados (versão OpenCode com suporte a `mcp`; se a versão local não suportar, o bloco é ignorado e vale webfetch/websearch).
-  // Docs de cada servidor em docs/mcp.md.
-  "mcp": {
-    "repo": { "type": "local", "command": ["opencode-mcp-repo"], "enabled": false },
-    "docs": { "type": "local", "command": ["opencode-mcp-docs"], "enabled": false },
-    "browser": { "type": "local", "command": ["opencode-mcp-browser"], "enabled": false }
   }
 }

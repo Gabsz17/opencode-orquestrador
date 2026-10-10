@@ -6,7 +6,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "validate": "node scripts/validate.mjs"
+    "validate": "node scripts/validate.mjs",
+    "pre-push": "node scripts/pre-push-check.mjs"
   },
   "dependencies": {
     "@opencode-ai/plugin": "1.18.21"

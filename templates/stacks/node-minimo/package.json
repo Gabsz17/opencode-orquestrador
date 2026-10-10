@@ -1,0 +1,12 @@
+{
+  "name": "node-minimo",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node server.mjs",
+    "lint": "node --check server.mjs && echo lint-ok",
+    "build": "echo build-ok",
+    "test": "node --test test.mjs"
+  }
+}

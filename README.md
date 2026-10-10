@@ -36,6 +36,8 @@ skills/
   testes-eficazes/     # pirâmide, bordas, zero flake
 templates/
   PLANO.md API.md
+  stacks/node-minimo/  # node http puro, lint/build/test prontos
+  stacks/next-fastapi/ # esqueleto de pastas + regra de precedência API->UI
 .opencode/memory/
   MEMORIA.md inbox/
 ```

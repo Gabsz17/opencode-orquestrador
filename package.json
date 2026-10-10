@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Sistema orquestrador para OpenCode: 1 orquestrador + 5 coords + 19 workers + 3 skills",
   "license": "MIT",
+  "private": true,
   "type": "module",
   "engines": { "node": ">=20" },
   "files": ["agents/", "skills/", "templates/", "commands/", "docs/", "scripts/", "evals/", "opencode.jsonc", "README.md", "LICENSE"],

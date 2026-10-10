@@ -1,10 +1,11 @@
 {
-  "name": "opencode-orquestrador",
-  "private": true,
+  "name": "@gabsz17/opencode-orquestrador",
+  "version": "1.0.0",
+  "description": "Sistema orquestrador para OpenCode: 1 orquestrador + 5 coords + 19 workers + 3 skills",
+  "license": "MIT",
   "type": "module",
-  "engines": {
-    "node": ">=20"
-  },
+  "engines": { "node": ">=20" },
+  "files": ["agents/", "skills/", "templates/", "commands/", "docs/", "scripts/", "evals/", "opencode.jsonc", "README.md", "LICENSE"],
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "pre-push": "node scripts/pre-push-check.mjs",

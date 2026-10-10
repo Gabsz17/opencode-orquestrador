@@ -67,6 +67,23 @@ for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes"]) {
   existsSync(join(root, "skills", s, "SKILL.md")) ? ok(`skill ${s}`) : fail(`skill faltando: ${s}`);
 }
 
+// 5b. Temperature por papel (frio para arbitrar, morno para criar)
+{
+  const criativos = new Set(["fe-components", "be-domain"]);
+  for (const file of readdirSync(agentsDir).filter((f) => f.endsWith(".md"))) {
+    const fm = (readFileSync(join(agentsDir, file), "utf8").split("---")[1] ?? "");
+    const m = fm.match(/temperature:\s*([0-9.]+)/);
+    if (!m) { fail(`${file} sem temperature`); continue; }
+    const t = Number(m[1]);
+    const name = file.replace(/\.md$/, "");
+    if (name === "orquestrador" || name.startsWith("coord-") || name.startsWith("qa-")) {
+      t === 0.1 ? ok(`${name} frio (0.1)`) : fail(`${name} deveria ser temperature 0.1 (está ${t})`);
+    } else if (criativos.has(name)) {
+      t === 0.3 ? ok(`${name} criativo (0.3)`) : fail(`${name} deveria ser temperature 0.3 (está ${t})`);
+    } else if (t < 0.1 || t > 0.3) fail(`${name} temperature fora da faixa 0.1-0.3 (está ${t})`);
+  }
+}
+
 // 6. Segredos nunca trackeados
 try {
   const tracked = execSync("git ls-files", { cwd: root, encoding: "utf8" }).split(/\r?\n/);

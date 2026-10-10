@@ -3,7 +3,7 @@ description: Implementa servicos e regras de negocio
 mode: subagent
 hidden: true
 color: "#569cd6"
-temperature: 0.2
+temperature: 0.3
 steps: 50
 permission:
   read: allow

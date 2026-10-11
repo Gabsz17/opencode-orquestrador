@@ -1,0 +1,83 @@
+# PLANO.md — Modo Estudos (mentor) no OpenCode
+
+> Orquestrador é o ÚNICO escritor deste arquivo (coords propõem diff no relatório).
+> Fonte: `templates/PLANO.md`. Missão: criar modo de estudos seguindo o mesmo rumo do modo orquestrador.
+
+## 1. Escopo
+
+- Objetivo: criar um modo de estudos dentro do opencode (`agents/mentor.md` + time + `commands/estudar.md` + template + docs) que replique a filosofia do orquestrador — hierarquia, contratos antes de paralelizar, delegação a coords, arbitragem, memória contínua e gates — mas para aprender, não para codar.
+- Fora do escopo:
+  - Mudar `agents/orquestrador.md` ou qualquer coord/worker existente (só leitura como referência).
+  - Mudar `opencode.jsonc` (agents são descobertos via `agents/*.md`; sem registro central).
+  - Criar backend/frontend/app (`src/**`, `server/**`, `app/**` não existem neste repo e nem devem ser criados).
+  - Integrar spaced-repetition externa (Anki etc.) — vira débito técnico com dono.
+- Critério de aceite (tudo rodando + gates verdes + evidências):
+  - [ ] `agents/mentor.md` (primary) + 3 coords + 6 workers criados e válidos (frontmatter parseável).
+  - [ ] `commands/estudar.md` invocável (`/estudar <tema>`).
+  - [ ] `templates/PLANO-ESTUDOS.md` + `docs/estudos/README.md` criados.
+  - [ ] `coord-qualidade: LIBERADO` (qa-quality + qa-security APROVADOS, sem CRÍTICO; qa-unit/contrato/e2e adaptados — ver Contratos).
+  - [ ] Evidências: `opencode validate` (ou leitura estrutural) verde + commit local + push.
+
+## 2. Contratos vigentes
+
+- `API.md` (versão/data): `API.md` v2026-10-11-estudos (nesta raiz) — adaptado: sem rotas HTTP; contrato = interfaces de agentes/comandos/memória.
+- Convenções (pastas, `.env.example`, Conventional Commits):
+  - Pastas: `agents/<nome>.md` (1 agente por arquivo, frontmatter + corpo pt-BR), `commands/estudar.md`, `templates/PLANO-ESTUDOS.md`, `docs/estudos/<tema>/` (trilhas), `.opencode/memory/inbox/<agente>.md`.
+  - `.env.example`: não se aplica (modo estudos não usa credencial; `BROWSER_*` só se `coord-pesquisa` for acionado, via env, nunca no repo).
+  - Commits: Conventional Commits em pt-BR (`feat: modo estudos (mentor)`, `docs: ...`). Push só com tree limpa.
+- Sub-contratos dos coords (UI / backend / infra — persistidos aqui pelo orquestrador):
+  - (a) `coord-pesquisa` (2026-10-11): fixar sintaxe V1 ate ADR de migracao; validador do repo = `npm run validate`; `hidden: true` nao e seguranca. Briefing: `docs/pesquisa/estudos-modo.md`.
+  - (b) `coord-plataforma` (2026-10-11): 14 arquivos (10 agents + comando + template + README + exemplo-esqueleto); mentor temp 0.1 + `todowrite: allow`; coords `edit: deny`; workers `edit` so `docs/estudos/**` + inbox; `question: deny` em todos.
+
+## 3. Fases (dono `coord-*`)
+
+| Fase | Dono | Repo | Entrada | Saída esperada | Status |
+|------|------|------|---------|----------------|--------|
+| 1. Pesquisa docs oficiais (agents/commands/mode/permission) | coord-pesquisa | . | pergunta + critério | briefing com fontes | concluído |
+| 2. Implementar mentor+coords+workers+comando+template+docs | coord-plataforma | . | API.md v2026-10-11-estudos | 14 arquivos | concluído |
+| 3. Gates de conteúdo e segurança | coord-qualidade | . | arquivos prontos | LIBERADO | pendente |
+| Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
+| Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
+
+> Frontend/backend marcados N/A com justificativa (missão é config de agentes, não app). Qualidade entra no passo 5 do fluxo.
+
+## 4. Progresso
+
+- [x] Contratos fechados (`API.md` v2026-10-11-estudos)
+- [x] Fatias delegadas em paralelo (pesquisa + plataforma)
+- [x] Arquivos do modo estudos entregues (14 arquivos)
+- [x] `npm run validate` verde (35 agents) + grep de segredos 0 matches nos novos
+- [ ] qa-quality APROVADO + qa-security APROVADO (adaptados, read-only)
+- [ ] `coord-qualidade: LIBERADO`
+- [ ] Commit + push
+
+Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
+
+- 2026-10-11: PLANO criado a partir de `templates/PLANO.md`; sessão movida de `C:\WINDOWS\system32` para o repo; `git log/status` lidos (main limpa, origin `Gabsz17/opencode-orquestrador`).
+- 2026-10-11: `API.md` v2026-10-11-estudos escrito (contrato de agentes, sem HTTP).
+- 2026-10-11: retornos recebidos (pesquisa: briefing `docs/pesquisa/estudos-modo.md`; plataforma: 14 arquivos). Arbitragem: sem conflito cross-team; contagem 11 vs 14 aceita (detalhamento venceu). `npm run validate` verde.
+
+## 5. Decisões
+
+| Data | Decisão | Motivo | Quem |
+|------|---------|--------|------|
+| 2026-10-11 | Modo `mentor` (primary) + 3 coords (`coord-teoria`, `coord-pratica`, `coord-avaliacao`) + 6 workers + reuso de `coord-pesquisa` | Espelha hierarquia do orquestrador sem o peso de 25 agentes; estudos não precisa de frontend/backend | orquestrador |
+| 2026-10-11 | `mentor` mantém `question: deny`; perguntas pedagógicas via texto/quiz, não via ferramenta `question` | Padrão do sistema é autonomia total; evita trava de execução; quiz em markdown cumpre o papel socrático | orquestrador |
+| 2026-10-11 | Trilhas em `docs/estudos/<tema>/` com `PLANO-ESTUDOS.md` por tema; memória global segue em `.opencode/memory/` | Separa progresso por tema sem poluir a memória global; reusa pipeline de inbox do orquestrador | orquestrador |
+| 2026-10-11 | Gates adaptados: qa-unit/contrato/e2e NÃO se aplicam a markdown de estudos; valem qa-quality + qa-security read-only + verificação estrutural | Não há código executável; forçar teste unitário em markdown seria teatro de QA | orquestrador |
+| 2026-10-11 | Anti-alucinação: afirmação técnica sem fonte = `não confirmado`; fonte preferida = docs oficiais ou briefing do `web-researcher` | Mesmo rigor de fontes do `coord-pesquisa` aplicado ao conteúdo pedagógico | orquestrador |
+| 2026-10-11 | Frontend/backend N/A nesta missão | Repo é config de agentes, sem app; forçar fatia seria desperdício | orquestrador |
+
+### Contador por erro (3 tentativas no mesmo erro -> pivota)
+
+| Erro | Tentativas | Ação (trocar lib / simplificar) |
+|------|------------|----------------------------------|
+| | 0/3 | |
+
+## 6. Débitos técnicos (com dono)
+
+| Dívida | Dono | Prazo |
+|--------|------|-------|
+| Integração spaced-repetition externa (Anki/Notion) | coord-avaliacao (propor) | pós-MVP |
+| `evals/estudos.md` (rubrica de qualidade pedagógica) | coord-avaliacao | nesta missão se couber, senão pós-MVP |
+| i18n das trilhas (só pt-BR no MVP) | coord-teoria | pós-MVP |

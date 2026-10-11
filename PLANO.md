@@ -35,7 +35,7 @@
 |------|------|------|---------|----------------|--------|
 | 1. Pesquisa docs oficiais (agents/commands/mode/permission) | coord-pesquisa | . | pergunta + critério | briefing com fontes | concluído |
 | 2. Implementar mentor+coords+workers+comando+template+docs | coord-plataforma | . | API.md v2026-10-11-estudos | 14 arquivos | concluído |
-| 3. Gates de conteúdo e segurança | coord-qualidade | . | arquivos prontos | LIBERADO | pendente |
+| 3. Gates de conteúdo e segurança | coord-qualidade | . | arquivos prontos | LIBERADO | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -47,8 +47,8 @@
 - [x] Fatias delegadas em paralelo (pesquisa + plataforma)
 - [x] Arquivos do modo estudos entregues (14 arquivos)
 - [x] `npm run validate` verde (35 agents) + grep de segredos 0 matches nos novos
-- [ ] qa-quality APROVADO + qa-security APROVADO (adaptados, read-only)
-- [ ] `coord-qualidade: LIBERADO`
+- [x] qa-quality APROVADO + qa-security APROVADO (adaptados, read-only)
+- [x] `coord-qualidade: LIBERADO`
 - [ ] Commit + push
 
 Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
@@ -56,6 +56,7 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 - 2026-10-11: PLANO criado a partir de `templates/PLANO.md`; sessão movida de `C:\WINDOWS\system32` para o repo; `git log/status` lidos (main limpa, origin `Gabsz17/opencode-orquestrador`).
 - 2026-10-11: `API.md` v2026-10-11-estudos escrito (contrato de agentes, sem HTTP).
 - 2026-10-11: retornos recebidos (pesquisa: briefing `docs/pesquisa/estudos-modo.md`; plataforma: 14 arquivos). Arbitragem: sem conflito cross-team; contagem 11 vs 14 aceita (detalhamento venceu). `npm run validate` verde.
+- 2026-10-11: `coord-qualidade: LIBERADO` (5 gates adaptados PASSOU/APROVADO, sem CRITICO; QA read-only, nada editado). Cobertura: sem re-execucao do validate pelo QA (sem shell delegavel) — evidencia vigente = validate verde da fase plataforma + estrutural manual; `/estudar` real nao executado (e uso, nao gate); `evals/estudos.md` segue debito.
 
 ## 5. Decisões
 
@@ -67,6 +68,7 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-11 | Gates adaptados: qa-unit/contrato/e2e NÃO se aplicam a markdown de estudos; valem qa-quality + qa-security read-only + verificação estrutural | Não há código executável; forçar teste unitário em markdown seria teatro de QA | orquestrador |
 | 2026-10-11 | Anti-alucinação: afirmação técnica sem fonte = `não confirmado`; fonte preferida = docs oficiais ou briefing do `web-researcher` | Mesmo rigor de fontes do `coord-pesquisa` aplicado ao conteúdo pedagógico | orquestrador |
 | 2026-10-11 | Frontend/backend N/A nesta missão | Repo é config de agentes, sem app; forçar fatia seria desperdício | orquestrador |
+| 2026-10-11 | `coord-qualidade: LIBERADO` com gates adaptados (unit/contrato/e2e viraram estrutural/matriz/dry-run; security+quality read-only) | Missão 100% markdown sem executável; QA não editou nada; sem CRÍTICO | coord-qualidade c/ orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 

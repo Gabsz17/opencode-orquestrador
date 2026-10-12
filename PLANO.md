@@ -44,7 +44,7 @@
 | 7. Pesquisa skills (orquestrador + estudos) | coord-pesquisa | . | pergunta + critério | briefing + 5 SKILL.md prontas | concluído |
 | 8. Aplicar skills + melhorias (validate, evals, README, ADR) | orquestrador (exceção depth-limit) | . | API.md v2026-10-12-enem-skills | skills + wiring + melhorias | em curso |
 | 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
-| 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | repo + commit (+ push se auth) | pendente |
+| 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | repo local + commit (push pendente: sem gh/token) | parcial |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -67,7 +67,9 @@
 - [x] Pesquisa skills concluída (5 skills com evidência Dunlosky-2013 + `delegacao-verificada` dev)
 - [ ] Skills criadas + wiring nos coords + briefing
 - [ ] Melhorias aplicadas (validate prefixos + skills, `evals/estudos.md`, README, package 1.1.0, ADR 0004)
-- [ ] Gates finais LIBERADO + repo estudos + push final
+- [x] Gates finais LIBERADO (`coord-qualidade`, sem CRITICO)
+- [x] Repo `~/opencode-modo-estudos` criado + commit `52fcd49` (34 arquivos; push pendente: sem `gh`/token no runner)
+- [ ] Push final `origin/main`
 
 Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 
@@ -93,6 +95,8 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-12 | Exceção depth-limit: orquestrador aplica diffs de config (`agents/`, `commands/`, `templates/`, `docs/`, `skills/`) propostos e revisados pelos coords, em vez de re-delegar | Coords em sessão subagente não conseguem invocar `plat-*`/`web-*` (depth 1); 1 tentativa sem retry, depois pivô; sem produto `src/**` envolvido — só configs de raiz | orquestrador |
 | 2026-10-12 | 5 skills (4 pedagógicas com evidência + `delegacao-verificada`); diff/ADR/contexto NÃO viram skill | Skill proliferation dilui descoberta; gatilho raro = skill morta | coord-pesquisa c/ orquestrador |
 | 2026-10-12 | Wiring mínimo: `delegacao-verificada` via `orquestrador.md` (cobre os 5 coords dev via Tasks); skills de estudos nos 4 agents de estudos; workers herdam via Task | Evita 5+ edições mecânicas nos coords dev; mapeamento completo persiste no `API.md` | orquestrador |
+| 2026-10-12 | Gates finais LIBERADO (ENEM + skills + melhorias, sem CRITICO, QA read-only) | Cobertura declarada: validate não re-rodado pelo QA; `/estudar-enem` real é uso; render Marp e `npm run eval` pendentes | coord-qualidade c/ orquestrador |
+| 2026-10-12 | Repo `opencode-modo-estudos` LOCAL + commit (push pendente: sem `gh` nem token no runner) | `gh` inexistente e `GITHUB_TOKEN`/`GH_TOKEN` ausentes; commit local `52fcd49` preserva tudo; push quando o dono autenticar | orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 

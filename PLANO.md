@@ -45,7 +45,7 @@
 | 8. Aplicar skills + melhorias (validate, evals, README, ADR) | orquestrador (exceção depth-limit) | . | API.md v2026-10-12-enem-skills | skills + wiring + melhorias | em curso |
 | 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
 | 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | CRIADO no GitHub + push `52fcd49` (`main`), verificado via `ls-remote` | concluído |
-| 11. Auditoria mentor (15 achados) + correções | coord-qualidade (audita) + orquestrador (aplica) | . | modo mentor | 15 correções (diagnóstico, gate score, respostas, simulados, C1–C5, 1ª sessão, carga, reentrada, progresso único, skills, níveis, evals, a11y, API, exemplo) | em curso |
+| 11. Auditoria mentor (15 achados) + correções | coord-qualidade (audita) + orquestrador (aplica) | . | modo mentor | 15 correções aplicadas + LIBERADO (só cosmético 5./5. corrigido) | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

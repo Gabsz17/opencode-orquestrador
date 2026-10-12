@@ -84,6 +84,31 @@ for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes", "reca
   }
 }
 
+// 5c. Contratos do modo estudos (Marp + respostas)
+{
+  const collect = (dir, out = []) => {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const p = join(dir, e.name);
+      if (e.isDirectory()) collect(p, out);
+      else if (e.isFile()) out.push(p);
+    }
+    return out;
+  };
+  const estudos = join(root, "docs", "estudos");
+  if (existsSync(estudos)) {
+    const slides = collect(estudos).filter((p) => p.endsWith("slides.md"));
+    if (!slides.length) fail("nenhum slides.md em docs/estudos");
+    for (const s of slides) {
+      const t = readFileSync(s, "utf8");
+      /marp:\s*true/.test(t) ? ok(`marp ok: ${s.split("docs")[1]}`) : fail(`slides sem marp:true: ${s.split("docs")[1]}`);
+    }
+  }
+  for (const f of ["agents/aval-quiz.md", "agents/aval-feedback.md"]) {
+    const t = readFileSync(join(root, f), "utf8");
+    t.includes("respostas-<modulo>.md") ? ok(`${f} cita respostas-<modulo>.md`) : fail(`${f} sem convenção respostas-<modulo>.md`);
+  }
+}
+
 // 6. Segredos nunca trackeados
 try {
   const tracked = execSync("git ls-files", { cwd: root, encoding: "utf8" }).split(/\r?\n/);

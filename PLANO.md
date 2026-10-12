@@ -50,7 +50,7 @@
 | 13. Plano de melhoria 50+ págs (`docs/plano-melhoria/`) | orquestrador | . | diagnóstico + backlog + roadmap | plano completo | pendente |
 | 14. Aplicar melhorias em ondas verificadas | orquestrador | . | backlog priorizado | ondas verdes + commits | pendente |
 | 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | LISTA RESIDUAL (11 MELs + 1 nota) | concluído |
-| 16. Aplicar lista residual (MEL-001…011) | orquestrador | . | specs ondas 3–4 | 11 MELs verdes + gates + sync | em curso |
+| 16. Aplicar lista residual (MEL-001…011) | orquestrador | . | specs ondas 3–4 | 11 MELs + LIBERADO + sync `f9154ea` | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

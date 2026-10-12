@@ -10,6 +10,7 @@
 - Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
+- [2026-10-12] lista-residual-11: banco 40 autorais + regras + eval runner + sync, tudo LIBERADO -> ação: próxima missão = H2 (MEL-016…020) com dono
 - [2026-10-12] avaliação-final: 14 residuais (11 MELs futuras + 3 baixos, 2 corrigidos na hora) -> ação: lista residual com dono no resumo; proposta sem implementação entra na lista com dono explícito
 - [2026-10-12] auditoria-mentor: 15 achados viraram 15 correções + LIBERADO (diagnóstico, gate score, respostas, C1–C5, 1ª sessão, carga, reentrada, progresso único, skills, níveis, 6 evals, a11y) -> ação: repetir checklist 1-a-1 em futuras auditorias
 - [2026-10-12] `gh auth login` colando PAT fine-grained sem escopo de criação falha (`createRepository` negado) -> ação: refazer via navegador (OAuth) ou criar repo no github.com/new e só dar push

@@ -107,6 +107,10 @@ for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes", "reca
     const t = readFileSync(join(root, f), "utf8");
     t.includes("respostas-<modulo>.md") ? ok(`${f} cita respostas-<modulo>.md`) : fail(`${f} sem convenção respostas-<modulo>.md`);
   }
+  {
+    const t = readFileSync(join(root, "agents/aval-feedback.md"), "utf8");
+    (t.includes("redacao-<tema>.md") && /nunca .*editad[oa] pelo corretor/i.test(t)) ? ok("aval-feedback protege redacao-<tema>.md") : fail("aval-feedback sem proteção a redacao-<tema>.md");
+  }
 }
 
 // 5d. Skills: IDs únicos (anti-shadowing) + description presente + sem padrões perigosos

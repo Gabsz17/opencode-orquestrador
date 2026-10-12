@@ -32,3 +32,9 @@
 1. <!-- data + módulo -->
 2. <!-- data + módulo -->
 3. <!-- data + módulo -->
+
+## Fila FSRS-like (manual: acertou→dobra o intervalo; errou→volta a 1 dia)
+
+| Item | Último acerto | Intervalo atual | Próxima data |
+|------|---------------|-----------------|--------------|
+| <!-- TODO --> | | 1 dia | |

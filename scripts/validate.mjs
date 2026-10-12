@@ -109,6 +109,21 @@ for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes", "reca
   }
 }
 
+// 5d. Skills: IDs únicos (anti-shadowing) + description presente + sem padrões perigosos
+{
+  const ids = new Set();
+  for (const d of readdirSync(join(root, "skills"), { withFileTypes: true }).filter((e) => e.isDirectory()).map((e) => e.name)) {
+    /^[a-z0-9]+(-[a-z0-9]+)*$/.test(d) && d.length <= 64 ? ok(`skill id válido: ${d}`) : fail(`skill id inválido: ${d}`);
+    ids.has(d) ? fail(`skill id duplicado: ${d}`) : ids.add(d);
+    const f = join(root, "skills", d, "SKILL.md");
+    if (!existsSync(f)) { fail(`skill sem SKILL.md: ${d}`); continue; }
+    const t = readFileSync(f, "utf8");
+    /description:\s*\S/.test(t) ? ok(`skill anunciada: ${d}`) : fail(`skill sem description (não anunciada): ${d}`);
+    /(curl|wget)[\s\S]{0,40}\|\s*(bash|sh)|rm\s+-rf|BEGIN.*PRIVATE|github_pat_|ghp_[A-Za-z0-9]{20,}/.test(t) && fail(`skill com padrão perigoso/segredo: ${d}`);
+  }
+  ok(`skills verificadas (${ids.size}, sem shadowing nem segredo)`);
+}
+
 // 6. Segredos nunca trackeados
 try {
   const tracked = execSync("git ls-files", { cwd: root, encoding: "utf8" }).split(/\r?\n/);

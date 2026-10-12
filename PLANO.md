@@ -51,6 +51,7 @@
 | 14. Aplicar melhorias em ondas verificadas | orquestrador | . | backlog priorizado | ondas verdes + commits | pendente |
 | 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | LISTA RESIDUAL (11 MELs + 1 nota) | concluído |
 | 16. Aplicar lista residual (MEL-001…011) | orquestrador | . | specs ondas 3–4 | 11 MELs + LIBERADO + sync `f9154ea` | concluído |
+| 17. CICLO-1: verificar repos + benchmark + opinião + plano + execução + reanálise | orquestrador + coords | ambos | repos verdes | melhorias + lista p/ confirmação | em curso |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

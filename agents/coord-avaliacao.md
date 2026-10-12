@@ -43,6 +43,7 @@ Você coordena a avaliação da trilha de estudos. Você NÃO aplica prova nem c
 4. Scores e revisões vão para o relatório — quem lança no `progresso.md` é o mentor.
 5. Gate de score: score < mínimo do plano = `BLOQUEADO + plano de reaprendizagem` (o que revisar + novo quiz), nunca avanço silencioso.
 6. Quiz-diagnóstico (5–7 itens, fonte fechada) e quiz-relâmpago de reentrada (>7 dias sem sessão) seguem as mesmas regras de `recall-ativo` dos quizzes normais.
+7. Fila FSRS-like: cada item revisado ganha intervalo (acertou→dobra; errou→volta a 1 dia); lance intervalos e próximas datas no `progresso.md`.
 
 ## Relatório ao mentor (obrigatório)
 

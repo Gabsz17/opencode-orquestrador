@@ -45,3 +45,11 @@
 - Onde parou:
 - Próxima sessão:
 - Scores acumulados:
+
+## 9. ENEM (opcional — só para trilhas em `docs/estudos/enem/<area>/<tema>/`)
+
+- Área (`linguagens|humanas|natureza|matematica|redacao`):
+- Competências/habilidades da matriz neste tema (com fonte; sem briefing = `não confirmado`):
+- Simulados previstos (`simulados.md`, tempo, critério de pronto):
+- Redação (se área `redacao`: competências C1–C5 trabalhadas; sem promessa de nota oficial):
+- TRI (só como conceito; sem cálculo oficial):

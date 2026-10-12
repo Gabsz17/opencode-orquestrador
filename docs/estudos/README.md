@@ -27,3 +27,10 @@
 - Afirmação técnica sem fonte oficial = `não confirmado`.
 - Níveis: `iniciante` (base + algo funcionando), `intermediario` (integra conceitos), `avancado` (decisões técnicas justificadas).
 - Nenhum segredo no repo (`.env` fora do git).
+
+## ENEM
+
+- Trilhas por área em `docs/estudos/enem/<area>/<tema>/` via `/estudar-enem <area> <tema>` (áreas `linguagens|humanas|natureza|matematica|redacao`).
+- Cada trilha ENEM tem `questoes.md` (autorais `autoral — padrão ENEM` + oficiais INEP citadas), `simulados.md`, `slides.md` (Marp, `---` por slide) e `progresso.md` (scores por área + simulados + redação por competência).
+- Detalhes: `docs/estudos/enem/README.md`. Exemplo de estrutura: `docs/estudos/enem/exemplo/`.
+- Regras duras: nunca banco pago, nunca questão falsa atribuída ao INEP, TRI só como conceito.

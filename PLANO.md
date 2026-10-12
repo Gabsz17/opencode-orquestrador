@@ -1,7 +1,7 @@
 # PLANO.md — Modo Estudos (mentor) no OpenCode
 
 > Orquestrador é o ÚNICO escritor deste arquivo (coords propõem diff no relatório).
-> Fonte: `templates/PLANO.md`. Missão: criar modo de estudos seguindo o mesmo rumo do modo orquestrador.
+> Fonte: `templates/PLANO.md`. Missão: criar modo de estudos seguindo o mesmo rumo do modo orquestrador + extensão ENEM (2026-10-12): questões, simulados, slides e matriz oficial.
 
 ## 1. Escopo
 
@@ -20,14 +20,16 @@
 
 ## 2. Contratos vigentes
 
-- `API.md` (versão/data): `API.md` v2026-10-11-estudos (nesta raiz) — adaptado: sem rotas HTTP; contrato = interfaces de agentes/comandos/memória.
+- `API.md` (versão/data): `API.md` v2026-10-12-enem (nesta raiz) — adaptado: sem rotas HTTP; contrato = interfaces de agentes/comandos/memória.
 - Convenções (pastas, `.env.example`, Conventional Commits):
-  - Pastas: `agents/<nome>.md` (1 agente por arquivo, frontmatter + corpo pt-BR), `commands/estudar.md`, `templates/PLANO-ESTUDOS.md`, `docs/estudos/<tema>/` (trilhas), `.opencode/memory/inbox/<agente>.md`.
+  - Pastas: `agents/<nome>.md` (1 agente por arquivo, frontmatter + corpo pt-BR), `commands/estudar.md`, `commands/estudar-enem.md`, `templates/PLANO-ESTUDOS.md` (com secao ENEM opcional), `docs/estudos/<tema>/` (trilhas), `docs/estudos/enem/<area>/<tema>/` (trilhas ENEM com `questoes.md`, `slides.md`, `simulados.md`), `.opencode/memory/inbox/<agente>.md`.
   - `.env.example`: não se aplica (modo estudos não usa credencial; `BROWSER_*` só se `coord-pesquisa` for acionado, via env, nunca no repo).
   - Commits: Conventional Commits em pt-BR (`feat: modo estudos (mentor)`, `docs: ...`). Push só com tree limpa.
 - Sub-contratos dos coords (UI / backend / infra — persistidos aqui pelo orquestrador):
   - (a) `coord-pesquisa` (2026-10-11): fixar sintaxe V1 ate ADR de migracao; validador do repo = `npm run validate`; `hidden: true` nao e seguranca. Briefing: `docs/pesquisa/estudos-modo.md`.
   - (b) `coord-plataforma` (2026-10-11): 14 arquivos (10 agents + comando + template + README + exemplo-esqueleto); mentor temp 0.1 + `todowrite: allow`; coords `edit: deny`; workers `edit` so `docs/estudos/**` + inbox; `question: deny` em todos.
+  - (c) `coord-pesquisa` ENEM (pos-retorno): matriz de referencia vigente + edital + repositorio oficial de provas (INEP/gov.br) + regras de citacao/direitos. Briefing: `docs/pesquisa/enem-fontes.md`.
+  - (d) `coord-plataforma` ENEM (pos-retorno): 2 workers novos (`enem-questoes`, `enem-slides`) + atualizacao de `coord-teoria`, `coord-pratica`, `mentor`, `commands/estudar-enem.md`, template (secao ENEM), `docs/estudos/enem/`.
 
 ## 3. Fases (dono `coord-*`)
 
@@ -36,6 +38,9 @@
 | 1. Pesquisa docs oficiais (agents/commands/mode/permission) | coord-pesquisa | . | pergunta + critério | briefing com fontes | concluído |
 | 2. Implementar mentor+coords+workers+comando+template+docs | coord-plataforma | . | API.md v2026-10-11-estudos | 14 arquivos | concluído |
 | 3. Gates de conteúdo e segurança | coord-qualidade | . | arquivos prontos | LIBERADO | concluído |
+| 4. Pesquisa ENEM (matriz, edital, provas oficiais, Marp) | coord-pesquisa | . | pergunta + critério | briefing `docs/pesquisa/enem-fontes.md` | pendente |
+| 5. Implementar foco ENEM (2 workers + comando + template + docs) | coord-plataforma | . | API.md v2026-10-12-enem | arquivos ENEM | pendente |
+| 6. Gates ENEM | coord-qualidade | . | arquivos ENEM prontos | LIBERADO | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -49,7 +54,12 @@
 - [x] `npm run validate` verde (35 agents) + grep de segredos 0 matches nos novos
 - [x] qa-quality APROVADO + qa-security APROVADO (adaptados, read-only)
 - [x] `coord-qualidade: LIBERADO`
-- [ ] Commit + push
+- [x] Commit + push (base `4b3abc9` no `origin/main`)
+- [ ] Contratos ENEM fechados (`API.md` v2026-10-12-enem)
+- [ ] Fatias ENEM delegadas em paralelo (pesquisa + plataforma)
+- [ ] Arquivos ENEM entregues (2 workers + comando + template + docs)
+- [ ] `npm run validate` verde + grep de segredos 0 nos novos
+- [ ] `coord-qualidade: LIBERADO (ENEM)` + commit + push
 
 Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 
@@ -69,6 +79,9 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-11 | Anti-alucinação: afirmação técnica sem fonte = `não confirmado`; fonte preferida = docs oficiais ou briefing do `web-researcher` | Mesmo rigor de fontes do `coord-pesquisa` aplicado ao conteúdo pedagógico | orquestrador |
 | 2026-10-11 | Frontend/backend N/A nesta missão | Repo é config de agentes, sem app; forçar fatia seria desperdício | orquestrador |
 | 2026-10-11 | `coord-qualidade: LIBERADO` com gates adaptados (unit/contrato/e2e viraram estrutural/matriz/dry-run; security+quality read-only) | Missão 100% markdown sem executável; QA não editou nada; sem CRÍTICO | coord-qualidade c/ orquestrador |
+| 2026-10-12 | Foco ENEM: 2 workers novos (`enem-questoes` sob `coord-pratica`, `enem-slides` sob `coord-teoria`) + comando `/estudar-enem` + secao ENEM no template; sem novo coord | Reusa hierarquia existente; ENEM e pratica/teoria por area, nao um time paralelo | orquestrador |
+| 2026-10-12 | Questoes: autorais marcadas `autoral - padrao ENEM` + oficiais INEP citadas (ano + caderno/cor + n.); NUNCA reproduzir bancos comerciais pagos nem inventar `questao do ENEM 20XX n. Y` | Provas INEP sao publicas para estudo; banco pago tem direito autoral; questao falsa e falha CRITICA de conteudo | orquestrador |
+| 2026-10-12 | Slides em markdown compativel Marp (`slides.md`, `---` por slide), sem dependencia nova; render Marp vira debito | Markdown puro funciona no preview; instalar toolchain de slides seria escopo extra | orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 
@@ -83,3 +96,5 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | Integração spaced-repetition externa (Anki/Notion) | coord-avaliacao (propor) | pós-MVP |
 | `evals/estudos.md` (rubrica de qualidade pedagógica) | coord-avaliacao | nesta missão se couber, senão pós-MVP |
 | i18n das trilhas (só pt-BR no MVP) | coord-teoria | pós-MVP |
+| Render de slides (Marp CLI / export PDF) | coord-teoria (propor) | pós-ENEM |
+| Banco de simulados prontos por area ENEM | coord-avaliacao | pós-ENEM |

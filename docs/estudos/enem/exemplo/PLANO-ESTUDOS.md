@@ -18,6 +18,7 @@
 
 - Conhecimento prévio exigido: <!-- TODO -->
 - Ferramentas/ambiente (sem segredos no repo): <!-- TODO -->
+- Glossário (`glossario.md` da trilha): <!-- TODO -->
 
 ## 4. Módulos
 
@@ -52,5 +53,5 @@
 - Área (`linguagens|humanas|natureza|matematica|redacao`): <!-- TODO -->
 - Competências/habilidades da matriz neste tema (com fonte; sem briefing = `não confirmado`): <!-- TODO -->
 - Simulados previstos (`simulados.md`, tempo, critério de pronto): <!-- TODO -->
-- Redação (se área `redacao`: competências C1–C5 trabalhadas; sem promessa de nota oficial): <!-- TODO -->
+- Redação (se área `redacao`: competências C1–C5 trabalhadas + reescrita obrigatória dos trechos fracos com 2ª correção do delta; texto em `redacao-<tema>.md` a partir de `docs/estudos/enem/redacao-modelo.md`, nunca editado pelo corretor; sem promessa de nota oficial): <!-- TODO -->
 - TRI (só como conceito; sem cálculo oficial): <!-- TODO -->

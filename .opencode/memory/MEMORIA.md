@@ -10,6 +10,7 @@
 - Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
+- [2026-10-12] auth github perene OK via GCM (vault `git:https://github.com`, fetch + push dry-run EXIT=0, sem aba porque credencial válida já existe) -> ação: `git push origin main` direto, sem token em env
 - [2026-10-12] repo sem gh/token: `gh` ausente + sem `GITHUB_TOKEN` -> ação: criar repo local + commit e registrar push pendente (não improvisar auth)
 - [2026-10-12] skills teto 5: diff/ADR/contexto não viram skill (proliferation dilui descoberta) -> ação: gatilho raro = template/comando, não skill
 - [2026-10-12] ENEM-esqueleto com ZERO questões elimina risco de questão falsa no exemplo -> ação: repetir padrão em exemplos pedagógicos

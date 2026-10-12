@@ -97,6 +97,7 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-12 | Wiring mínimo: `delegacao-verificada` via `orquestrador.md` (cobre os 5 coords dev via Tasks); skills de estudos nos 4 agents de estudos; workers herdam via Task | Evita 5+ edições mecânicas nos coords dev; mapeamento completo persiste no `API.md` | orquestrador |
 | 2026-10-12 | Gates finais LIBERADO (ENEM + skills + melhorias, sem CRITICO, QA read-only) | Cobertura declarada: validate não re-rodado pelo QA; `/estudar-enem` real é uso; render Marp e `npm run eval` pendentes | coord-qualidade c/ orquestrador |
 | 2026-10-12 | Repo `opencode-modo-estudos` LOCAL + commit (push pendente: sem `gh` nem token no runner) | `gh` inexistente e `GITHUB_TOKEN`/`GH_TOKEN` ausentes; commit local `52fcd49` preserva tudo; push quando o dono autenticar | orquestrador |
+| 2026-10-12 | gh 2.102.0 presente mas sem login; PATH corrigido; `gh auth login` pendente do dono | Sem login o `gh` não cria repo; após login, orquestrador cria repos sozinho (`gh repo create`) | orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 

@@ -59,6 +59,18 @@ try {
   rub("quiz", [["gabarito-separado", /gabarito separado/i, "agents/aval-quiz.md"], ["variacao-reteste", /enunciado NOVO/i, "agents/aval-quiz.md"], ["contrato-resposta", /respostas-<modulo>/, "agents/aval-quiz.md"]]);
   rub("anti-alucinacao", [["nunca-invente", /NUNCA invente/i, "agents/enem-questoes.md"], ["autoral", /autoral/i, "agents/enem-questoes.md"], ["citacao-completa", /caderno\/cor/i, "agents/enem-questoes.md"]]);
 }
+// 7. banco autoral: 40 questões, zero oficial (regressão automática do MEL-001)
+{
+  const files = ["linguagens", "humanas", "natureza", "matematica"].map((a) => join(root, "docs/estudos/enem/simulados-modelo", `${a}.md`));
+  let n = 0;
+  for (const f of files) {
+    if (!existsSync(f)) { fail(`banco ausente: ${f}`); continue; }
+    const t = readFileSync(f, "utf8");
+    n += (t.match(/\*\*Q\d+\./g) || []).length;
+    /ENEM 20\d\d/.test(t) && fail(`atribuição oficial em ${f}`);
+  }
+  n === 40 ? ok("banco: 40 questões autorais") : fail(`banco com ${n}/40 questões`);
+}
 
 if (fails) { console.error(`\neval: ${fails} falha(s)`); process.exit(1); }
 console.log("\neval: comportamentos + piloto verdes");

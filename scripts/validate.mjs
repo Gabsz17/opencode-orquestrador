@@ -126,6 +126,11 @@ for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes", "reca
     /(curl|wget)[\s\S]{0,40}\|\s*(bash|sh)|rm\s+-rf|BEGIN.*PRIVATE|github_pat_|ghp_[A-Za-z0-9]{20,}/.test(t) && fail(`skill com padrão perigoso/segredo: ${d}`);
   }
   ok(`skills verificadas (${ids.size}, sem shadowing nem segredo)`);
+  for (const file of readdirSync(agentsDir).filter((f) => f.endsWith(".md"))) {
+    const fm = readFileSync(join(agentsDir, file), "utf8").split("---")[1] ?? "";
+    /^\s*(permissions|shell|subagent):/m.test(fm) && fail(`${file} com chave V2 (migração não autorizada — ver ADR-0005)`);
+  }
+  ok("agents 100% schema V1 (sem chave V2)");
 }
 
 // 6. Segredos nunca trackeados

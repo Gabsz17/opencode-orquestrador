@@ -56,7 +56,7 @@ try {
     console.log(`judge ${nome}: score ${s}/${crits.length}`);
   };
   rub("redacao", [["c1-c5", /C1.C5/, "agents/aval-feedback.md"], ["reescrita", /reescrita/i, "agents/aval-feedback.md"], ["modo-rapido", /modo.rápido/i, "agents/aval-feedback.md"]]);
-  rub("quiz", [["gabarito-separado", /gabarito separado/i, "agents/aval-quiz.md"], ["variacao-reteste", /enunciado NOVO/i, "agents/aval-quiz.md"], ["contrato-resposta", /respostas.-modulo/, "agents/aval-quiz.md"]]);
+  rub("quiz", [["gabarito-separado", /gabarito separado/i, "agents/aval-quiz.md"], ["variacao-reteste", /enunciado NOVO/i, "agents/aval-quiz.md"], ["contrato-resposta", /respostas-<modulo>/, "agents/aval-quiz.md"]]);
   rub("anti-alucinacao", [["nunca-invente", /NUNCA invente/i, "agents/enem-questoes.md"], ["autoral", /autoral/i, "agents/enem-questoes.md"], ["citacao-completa", /caderno\/cor/i, "agents/enem-questoes.md"]]);
 }
 

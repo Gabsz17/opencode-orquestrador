@@ -32,6 +32,19 @@ try {
   execSync("node --test test.mjs", { cwd: join(root, "templates/stacks/node-minimo"), stdio: "pipe" });
   ok("eval piloto: node-minimo verde");
 } catch { fail("eval piloto: node-minimo quebrou"); }
+// 5. modo estudos: 13+2 evals presentes como regra verificável?
+{
+  const t = readFileSync(join(root, "evals/estudos.md"), "utf8");
+  for (const e of ["questao-falsa", "quiz-sem-gabarito", "lista-bloco-puro", "slide-sem-marp", "banco-pago", "nota-tri", "releitura", "nivel-falso", "score-baixo-avanca", "resposta-sem-contrato", "retorno-30-dias", "redacao-com-nota", "sessao-gigante", "reteste-identico", "simulado-bloco-puro"]) {
+    t.includes(`\`${e}\``) ? ok(`eval estudos: ${e}`) : fail(`evals/estudos.md sem cenário ${e}`);
+  }
+  const q = readFileSync(join(root, "agents/enem-questoes.md"), "utf8");
+  /NUNCA invente/.test(q) ? ok("eval questao-falsa: worker proíbe questão oficial inventada") : fail("enem-questoes sem trava anti-questão-falsa");
+  const a = readFileSync(join(root, "agents/coord-avaliacao.md"), "utf8");
+  /BLOQUEADO \+ plano de reaprendizagem/.test(a) ? ok("eval score-baixo-avanca: gate BLOQUEADO existe") : fail("coord-avaliacao sem gate de score");
+  const f = readFileSync(join(root, "agents/aval-feedback.md"), "utf8");
+  /2ª correção só do que mudou/.test(f) ? ok("eval redacao: reescrita com 2ª correção") : fail("aval-feedback sem reescrita");
+}
 
 if (fails) { console.error(`\neval: ${fails} falha(s)`); process.exit(1); }
-console.log("\neval: 3/3 comportamentos + piloto verdes");
+console.log("\neval: comportamentos + piloto verdes");

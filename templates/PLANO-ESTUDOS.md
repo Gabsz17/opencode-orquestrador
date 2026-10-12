@@ -19,6 +19,7 @@
 
 - Conhecimento prévio exigido:
 - Ferramentas/ambiente (sem segredos no repo):
+- Glossário (`glossario.md` da trilha, mantido por `teoria-conceito`):
 
 ## 4. Módulos
 
@@ -53,5 +54,5 @@
 - Área (`linguagens|humanas|natureza|matematica|redacao`):
 - Competências/habilidades da matriz neste tema (com fonte; sem briefing = `não confirmado`):
 - Simulados previstos (`simulados.md`, tempo, critério de pronto):
-- Redação (se área `redacao`: competências C1–C5 trabalhadas; sem promessa de nota oficial):
+- Redação (se área `redacao`: competências C1–C5 trabalhadas + reescrita obrigatória dos trechos fracos com 2ª correção do delta; sem promessa de nota oficial):
 - TRI (só como conceito; sem cálculo oficial):

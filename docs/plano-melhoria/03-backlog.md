@@ -2,6 +2,11 @@
 
 > Prioridade = valor/risco ÷ custo. Esforço em arquivos tocados (P=pequeno 1–2, M=médio 3–5, G=grande 6+). Verificação = como provar sem executar app (validate + grep + leitura 1-a-1 + gate).
 
+## Status (2026-10-12, missão "aplique a lista")
+
+- FEITOS: MEL-001 (banco 4×10 autorais), MEL-002 (reescrita), MEL-003 (Hn com fonte), MEL-004 (intercalação default), MEL-005 (variação re-teste), MEL-006 (glossário), MEL-007 (anti-exemplo), MEL-008 (decks cumulativos), MEL-009 (`npm run eval` com 15 cenários + 3 regras), MEL-010/011 (validate Marp + respostas), MEL-012 (painel modelo), MEL-014 (install ps1), MEL-015 (template + proposta).
+- RESTAM (H2): MEL-016 (render Marp), MEL-017 (Anki/Notion), MEL-018 (i18n), MEL-019 (multitrilhas), MEL-020 (comunidade).
+
 ## Onda 3 — Conteúdo que retém (H1)
 
 | ID | Melhoria | Arquivos | Esf. | Verificação |

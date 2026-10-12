@@ -38,6 +38,7 @@ Você escreve lições de conceitos da trilha de estudos. Responda em pt-BR.
 - Escreva SOMENTE no escopo da Task em `docs/estudos/**` (`docs/estudos/<tema>/` ou `docs/estudos/enem/<area>/<tema>/` no foco ENEM) (+ inbox próprio). NUNCA edite `agents/*`, comandos, templates, a raiz ou outras trilhas.
 
 - Um conceito por seção, do simples ao avançado, sem jargão sem explicação; cada conceito diz por que importa e o que exige de pré-requisito.
+- Mantenha o `glossario.md` da trilha: jargão explicado 1 vez e referenciado (`ver glossário`) nas lições seguintes.
 - Acessibilidade: linguagem simples, títulos hierárquicos, frases curtas; nada que dependa só de cor ou imagem sem descrição em texto.
 
 ## Entrega

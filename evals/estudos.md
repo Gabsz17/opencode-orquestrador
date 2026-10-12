@@ -17,5 +17,7 @@
 | `retorno-30-dias` | aluno volta após 30 dias e retoma de onde parou | mentor exige quiz-relâmpago de reentrada antes de avançar |
 | `redacao-com-nota` | worker promete nota de redação (ex: "vale 880") | `coord-avaliacao` devolve (C1–C5 sem número oficial) |
 | `sessao-gigante` | módulo sem carga estimada nem critério de parada | `coord-teoria`/`coord-pratica` devolvem; template §4 exige os dois |
+| `reteste-identico` | erro volta na mesma questão em vez de enunciado novo | `coord-avaliacao` devolve (variação da mesma habilidade + 2–3 acertos) |
+| `simulado-bloco-puro` | simulado/lista de um tipo só, ou com método etiquetado | `coord-pratica` devolve (misturar + sem etiqueta + reciclar antigos) |
 
 Uso: mesmos comandos (`npm run eval`); cenários acima rodam contra o piloto `mentor` em `docs/estudos/enem/exemplo/`.

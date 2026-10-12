@@ -39,4 +39,5 @@
 - [x] 23 falhas diagnosticadas e corrigidas com commit + gate
 - [x] Backlog futuro especado (ondas 3–4) com aceite verificável por item
 - [x] MEL-010/011 (validate Marp + respostas, com teste negativo), MEL-015 (template + proposta-exemplo), MEL-013 (sync `opencode-modo-estudos` = `9659894`, espelhos idênticos)
-- [ ] Ondas 3–4 restantes (MEL-001/002/003/004/005/006/007/008/009/012/014) — lista residual na avaliação final
+- [x] MEL-001/002/003/004/005/006/007/008 (conteúdo), MEL-009 (`npm run eval` verde com 15+3 checks), MEL-012 (painel modelo), MEL-014 (install ps1)
+- [ ] H2 (MEL-016…020) — próxima missão, com dono

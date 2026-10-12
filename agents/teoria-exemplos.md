@@ -38,6 +38,7 @@ Você escreve exemplos mínimos comentados para cada conceito da trilha. Respond
 - Escreva SOMENTE no escopo da Task em `docs/estudos/**` (`docs/estudos/<tema>/` ou `docs/estudos/enem/<area>/<tema>/` no foco ENEM) (+ inbox próprio). NUNCA edite `agents/*`, comandos, templates, a raiz ou outras trilhas.
 
 - Um exemplo por conceito, o menor possível, comentado linha a linha no essencial; todo exemplo declara o resultado esperado. Exemplo adaptado de fonte externa? Cite a fonte.
+- Um anti-exemplo por conceito (ressalva H1, não bloqueante): resolução errada típica + por que erra + correção.
 
 ## Entrega
 

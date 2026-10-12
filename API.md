@@ -32,6 +32,10 @@
 - Questões **autorais**: marcadas `autoral — padrão ENEM` (área, texto-base, enunciado, 5 alternativas A–E, gabarito separado com resolução comentada + habilidade da matriz).
 - NUNCA inventar `questão do ENEM 20XX nº Y` sem conferência na prova oficial — questão falsa é falha CRÍTICA de conteúdo.
 - Dono de `simulados.md`: `enem-questoes` (integralmente; `coord-avaliacao` monta quizzes a partir dele, não o edita).
+- Banco modelo: `docs/estudos/enem/simulados-modelo/<area>.md` (só autorais + gabarito + habilidade; zero oficial).
+- Glossário: `glossario.md` por trilha (dono `teoria-conceito`; jargão explicado 1 vez).
+- Painel: `docs/estudos/enem/progresso-modelo.md` (scores/área, streak manual, top gaps, próximas revisões; sem PII).
+- Instalação: `scripts/install-modo-estudos.ps1` (com backup automático).
 - Teoria ENEM alinhada à matriz de referência vigente (competências/habilidades por área, conforme briefing `docs/pesquisa/enem-fontes.md`).
 - Redação: guia por competências (sem prometer correção oficial; feedback indica o que melhorar por competência).
 - TRI: explicar como conceito (proficiência, coerência pedagógica); sem prometer cálculo de nota oficial.

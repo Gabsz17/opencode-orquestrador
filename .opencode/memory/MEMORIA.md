@@ -10,6 +10,7 @@
 - Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
+- [2026-10-12] ciclos-5+6 LIBERADO (Hn 6 rotas, 40/40 gabaritos, ADR-0006, banco-regressão, V1-check, READMEs íntegros) -> ação: recheck changelog a cada 2 ciclos; Hn só com PDF oficial
 - [2026-10-12] ciclo-4 LIBERADO (judge tolerante, backup restore real, Hn 5 rotas falhas, +5 gabaritos) + meu próprio endurecimento quebrou o eval (pego antes do push) -> ação: toda mudança em `eval.mjs`/`validate.mjs` roda os dois antes de commitar, sem exceção
 - [2026-10-12] ciclo-3 LIBERADO + check novo achou gap real (proteção redação só no template, worker sem frase) -> ação: todo endurecimento no validate nasce com frase-canônica presente nos 2 lados antes do commit
 - [2026-10-12] ciclo-2 LIBERADO (judge piloto, resume task_id, redação rápida, multitrilhas, links vivos, V2 sem trigger) -> ação: ciclo-3 = Hn real + redação-foto + streak + install-teste + links

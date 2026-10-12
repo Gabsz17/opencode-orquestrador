@@ -1,6 +1,6 @@
 # Briefing: fontes oficiais modo ENEM (questões, matriz, slides)
 
-> Data da pesquisa: 2026-10-12. Método: websearch + webfetch direto (web-researcher bloqueado por depth-limit 1; fallback docs/mcp.md). Regra: só afirmação com fonte oficial; sem fonte = `não confirmado`. Mínimo 2 fontes independentes por afirmação técnica. Sem reproduzir questões inteiras (só links + citação curta, Lei 9.610 art. 46 III).
+> Data da pesquisa: 2026-10-12. Recheck ciclo-2 (2026-10-12): página `provas-e-gabaritos` viva; `marp.app` confirma `---`, 3 temas e diretivas — contrato mantido. Método: websearch + webfetch direto (web-researcher bloqueado por depth-limit 1; fallback docs/mcp.md). Regra: só afirmação com fonte oficial; sem fonte = `não confirmado`. Mínimo 2 fontes independentes por afirmação técnica. Sem reproduzir questões inteiras (só links + citação curta, Lei 9.610 art. 46 III).
 > Memória aplicada: API.md single-writer; nunca gravar segredo; hidden não é segurança; regra anti-alucinação modo estudos.
 
 ## 1. Matriz de referência

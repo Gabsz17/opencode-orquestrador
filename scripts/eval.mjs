@@ -45,6 +45,20 @@ try {
   const f = readFileSync(join(root, "agents/aval-feedback.md"), "utf8");
   /2ª correção só do que mudou/.test(f) ? ok("eval redacao: reescrita com 2ª correção") : fail("aval-feedback sem reescrita");
 }
+// 6. judge piloto (rubrica estática 0-3 por eixo; LLM-judge real = H2 — sem runner de modelo neste repo)
+{
+  const rub = (nome, crits) => {
+    let s = 0;
+    for (const [label, re, file] of crits) {
+      const t = readFileSync(join(root, file), "utf8");
+      re.test(t) ? (s++, ok(`judge ${nome}: ${label}`)) : fail(`judge ${nome}: falta ${label} em ${file}`);
+    }
+    console.log(`judge ${nome}: score ${s}/${crits.length}`);
+  };
+  rub("redacao", [["c1-c5", /C1–C5/, "agents/aval-feedback.md"], ["reescrita", /reescrita/, "agents/aval-feedback.md"], ["modo-rapido", /Modo rápido/, "agents/aval-feedback.md"]]);
+  rub("quiz", [["gabarito-separado", /gabarito separado/, "agents/aval-quiz.md"], ["variacao-reteste", /enunciado NOVO/, "agents/aval-quiz.md"], ["contrato-resposta", /respostas-<modulo>\.md/, "agents/aval-quiz.md"]]);
+  rub("anti-alucinacao", [["nunca-invente", /NUNCA invente/, "agents/enem-questoes.md"], ["autoral", /autoral/, "agents/enem-questoes.md"], ["citacao-completa", /caderno\/cor/, "agents/enem-questoes.md"]]);
+}
 
 if (fails) { console.error(`\neval: ${fails} falha(s)`); process.exit(1); }
 console.log("\neval: comportamentos + piloto verdes");

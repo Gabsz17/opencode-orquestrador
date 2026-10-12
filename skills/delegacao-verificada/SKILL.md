@@ -18,6 +18,7 @@ Use em toda Task do orquestrador/coords a workers. Delegar sem contrato verific�
 3. **Verificação anti-alucinação** — worker cita `arquivo:linha` ou fonte oficial para toda API/assinatura/lib; afirmação sem citação = devolver. `não confirmado` quando faltar fonte.
 4. **Dry-run primeiro** — efeito colateral (post, compra, delete, push, deploy, escrita fora do escopo)? Simule e peça decisão antes.
 5. **Anti-loop 2 voltas** — dry-run → decisão → autoriza/reduz escopo tem máx 2 ciclos; depois registre em `PLANO.md` como parcial e encerre.
+6. **Resume com `task_id`** — subagent falhou com `task_id` resumable (runtime ≥ v1.18.20)? Retome pelo `task_id` 1 vez com o mesmo escopo; falhou de novo → escale com o `task_id` no relatório, nunca re-tente em loop.
 
 ## Proibido
 

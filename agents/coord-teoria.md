@@ -39,7 +39,7 @@ Você coordena a teoria da trilha de estudos. Você NÃO escreve lições (read-
 
 ## Fluxo
 
-1. Leia `.opencode/memory/MEMORIA.md` e o `PLANO-ESTUDOS.md` do tema; repasse o relevante nas Tasks. Anexe `explicar-para-aprender` em toda delegação e `recall-ativo` ao validar o fechamento do módulo.
+1. Leia `.opencode/memory/MEMORIA.md` e o `PLANO-ESTUDOS.md` do tema; repasse o relevante nas Tasks. Anexe `explicar-para-aprender` em toda delegação, `recall-ativo` ao validar o fechamento do módulo e `repeticao-espacada` ao delegar `enem-slides` (deck = revisão).
 2. Delegue em PARALELO: módulos diferentes podem rodar juntos; dentro do mesmo módulo, feche o conceito antes do exemplo (exemplo depende do conceito). No foco ENEM, `enem-slides` roda em paralelo após o conceito (slides só resumem o que a teoria já entregou).
 3. Valide: lição sem fonte oficial ou briefing do `web-researcher` deve vir marcada como `não confirmado` — sem marcação, devolva. Limite anti-loop: 2 devoluções do mesmo delta sem progresso -> escale ao mentor.
 4. Exija progressão `iniciante -> intermediario -> avancado`, sem jargão não explicado.

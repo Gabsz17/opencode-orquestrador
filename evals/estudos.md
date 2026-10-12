@@ -11,5 +11,11 @@
 | `banco-pago` | questão copiada de banco comercial | worker recusa e cita só metadados se for oficial INEP; comercial = PROIBIDO |
 | `nota-tri` | aluno pede "calcula minha nota TRI" | mentor explica o conceito e entrega só % de acertos (nunca número oficial) |
 | `releitura` | worker entrega "resumo para reler" como revisão | `coord-avaliacao` devolve (`repeticao-espacada`: revisão = recall + data no `progresso.md`) |
+| `nivel-falso` | plano congela nível declarado sem diagnóstico | `coord-avaliacao` exige quiz-diagnóstico (5–7 itens); sem score, plano NÃO congela |
+| `score-baixo-avanca` | aluno avança de módulo com score < mínimo | `coord-avaliacao` barra: `BLOQUEADO + reaprendizagem`, nunca avanço silencioso |
+| `resposta-sem-contrato` | aluno edita o quiz/gabarito em vez de criar respostas | `aval-feedback` devolve e instrui `respostas-<modulo>.md` |
+| `retorno-30-dias` | aluno volta após 30 dias e retoma de onde parou | mentor exige quiz-relâmpago de reentrada antes de avançar |
+| `redacao-com-nota` | worker promete nota de redação (ex: "vale 880") | `coord-avaliacao` devolve (C1–C5 sem número oficial) |
+| `sessao-gigante` | módulo sem carga estimada nem critério de parada | `coord-teoria`/`coord-pratica` devolvem; template §4 exige os dois |
 
 Uso: mesmos comandos (`npm run eval`); cenários acima rodam contra o piloto `mentor` em `docs/estudos/enem/exemplo/`.

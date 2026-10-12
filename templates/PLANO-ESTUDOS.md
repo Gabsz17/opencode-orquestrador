@@ -7,11 +7,13 @@
 
 - O que o aluno será capaz de fazer ao final:
 - Critério de pronto da trilha:
+- Boas-vindas (ler para o aluno na 1ª sessão): objetivo em 2 linhas + duração estimada da sessão + como responder quizzes (`respostas-<modulo>.md`) + onde ver o progresso:
 
 ## 2. Nível
 
 - Nível inicial (`iniciante|intermediario|avancado`):
 - O que o aluno já sabe (ponto de partida):
+- Nível verificado (quiz-diagnóstico do `coord-avaliacao`, 5–7 itens): nível final = declarado + score. Sem diagnóstico, plano NÃO congela:
 
 ## 3. Pré-requisitos
 
@@ -20,19 +22,21 @@
 
 ## 4. Módulos
 
-| Módulo | Conceitos | Exemplos | Status |
-|--------|-----------|----------|--------|
-| 1. ... | ... | ... | pendente |
+| Módulo | Conceitos | Exemplos | Carga estimada | Critério de parada da sessão | Status |
+|--------|-----------|----------|----------------|-------------------------------|--------|
+| 1. ... | ... | ... | ... | ... | pendente |
 
 ## 5. Exercícios
 
 - Lista por módulo (gradação fixação -> aplicação -> desafio):
 - Critério de pronto por exercício:
+- Convenção de resposta: aluno responde em `respostas-<modulo>.md` e nunca edita quiz/gabarito:
 
 ## 6. Quizzes
 
 - Quiz por módulo + gabarito separado:
 - Score mínimo para avançar:
+- Gate: score < mínimo = `BLOQUEADO + plano de reaprendizagem`, nunca avanço silencioso:
 
 ## 7. Revisões
 
@@ -42,9 +46,10 @@
 
 ## 8. Progresso
 
-- Onde parou:
-- Próxima sessão:
-- Scores acumulados:
+> Estado vive em `progresso.md` (o plano guarda metas, o progresso guarda estado). Não duplicar números aqui.
+
+- Última sessão (obrigatória, AAAA-MM-DD — retorno após >7 dias = quiz-relâmpago de reentrada):
+- Próxima revisão:
 
 ## 9. ENEM (opcional — só para trilhas em `docs/estudos/enem/<area>/<tema>/`)
 

@@ -45,6 +45,7 @@
 | 8. Aplicar skills + melhorias (validate, evals, README, ADR) | orquestrador (exceção depth-limit) | . | API.md v2026-10-12-enem-skills | skills + wiring + melhorias | em curso |
 | 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
 | 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | CRIADO no GitHub + push `52fcd49` (`main`), verificado via `ls-remote` | concluído |
+| 11. Auditoria mentor (15 achados) + correções | coord-qualidade (audita) + orquestrador (aplica) | . | modo mentor | 15 correções (diagnóstico, gate score, respostas, simulados, C1–C5, 1ª sessão, carga, reentrada, progresso único, skills, níveis, evals, a11y, API, exemplo) | em curso |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -98,6 +99,7 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-12 | Gates finais LIBERADO (ENEM + skills + melhorias, sem CRITICO, QA read-only) | Cobertura declarada: validate não re-rodado pelo QA; `/estudar-enem` real é uso; render Marp e `npm run eval` pendentes | coord-qualidade c/ orquestrador |
 | 2026-10-12 | Repo `opencode-modo-estudos` LOCAL + commit (push pendente: sem `gh` nem token no runner) | `gh` inexistente e `GITHUB_TOKEN`/`GH_TOKEN` ausentes; commit local `52fcd49` preserva tudo; push quando o dono autenticar | orquestrador |
 | 2026-10-12 | gh 2.102.0 presente mas sem login; PATH corrigido; `gh auth login` pendente do dono | Sem login o `gh` não cria repo; após login, orquestrador cria repos sozinho (`gh repo create`) | orquestrador |
+| 2026-10-12 | Auditoria mentor: aplicar os 15 achados; `simulados.md` owned por `enem-questoes`; plano guarda metas + `progresso.md` guarda estado | Gaps reais (nivelamento, gate órfão, respostas, redação, 1ª sessão, ritmo, reentrada) > custo baixo; o que funciona (anti-alucinação, TRI-conceito, Marp, hierarquia) NÃO é tocado | coord-qualidade c/ orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 

@@ -41,6 +41,8 @@ Você coordena a avaliação da trilha de estudos. Você NÃO aplica prova nem c
 2. Delegue em PARALELO: quiz do módulo corrente + feedback das respostas pendentes podem rodar juntos.
 3. Valide: todo quiz cobre só o que teoria e prática já entregaram; todo feedback usa o padrão `BLOQUEADO: <motivo> + <o que falta> + <próximo passo>`. Limite anti-loop: 2 devoluções do mesmo delta sem progresso -> escale ao mentor.
 4. Scores e revisões vão para o relatório — quem lança no `progresso.md` é o mentor.
+5. Gate de score: score < mínimo do plano = `BLOQUEADO + plano de reaprendizagem` (o que revisar + novo quiz), nunca avanço silencioso.
+6. Quiz-diagnóstico (5–7 itens, fonte fechada) e quiz-relâmpago de reentrada (>7 dias sem sessão) seguem as mesmas regras de `recall-ativo` dos quizzes normais.
 
 ## Relatório ao mentor (obrigatório)
 

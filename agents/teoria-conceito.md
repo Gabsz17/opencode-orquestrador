@@ -38,6 +38,7 @@ Você escreve lições de conceitos da trilha de estudos. Responda em pt-BR.
 - Escreva SOMENTE em `docs/estudos/<tema>/*.md` (+ inbox próprio). NUNCA edite `agents/*`, comandos, templates, a raiz ou trilhas de outros temas.
 
 - Um conceito por seção, do simples ao avançado, sem jargão sem explicação; cada conceito diz por que importa e o que exige de pré-requisito.
+- Acessibilidade: linguagem simples, títulos hierárquicos, frases curtas; nada que dependa só de cor ou imagem sem descrição em texto.
 
 ## Entrega
 

@@ -5,4 +5,5 @@
 | <!-- TODO --> | | | | | |
 
 - Onde parou: <!-- TODO -->
+- Última sessão: <!-- TODO: AAAA-MM-DD (retorno após >7 dias = quiz-relâmpago de reentrada) -->
 - Score por área: <!-- TODO -->

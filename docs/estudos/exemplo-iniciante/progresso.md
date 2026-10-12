@@ -5,7 +5,7 @@
 ## Onde estou
 
 - Módulo atual: <!-- TODO -->
-- Última sessão: <!-- TODO: AAAA-MM-DD -->
+- Última sessão: <!-- TODO: AAAA-MM-DD (retorno após >7 dias = quiz-relâmpago de reentrada) -->
 - Próxima sessão: <!-- TODO -->
 
 ## Histórico de sessões

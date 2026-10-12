@@ -23,14 +23,15 @@
 | `pratica-projetos` | subagent, hidden | — | `docs/estudos/<tema>/*.md` + inbox próprio | existe (inalterado) |
 | `aval-quiz` | subagent, hidden | — | `docs/estudos/<tema>/quiz*.md` + inbox próprio | existe (inalterado) |
 | `aval-feedback` | subagent, hidden | — | `docs/estudos/<tema>/feedback*.md` + inbox próprio | existe (inalterado) |
-| `enem-questoes` | subagent, hidden | — (recebe de `coord-pratica`) | `docs/estudos/enem/<area>/<tema>/questoes.md` + `simulados.md` + inbox próprio | a criar |
-| `enem-slides` | subagent, hidden | — (recebe de `coord-teoria`) | `docs/estudos/enem/<area>/<tema>/slides.md` + inbox próprio | a criar |
+| `enem-questoes` | subagent, hidden | — (recebe de `coord-pratica`) | `docs/estudos/enem/<area>/<tema>/questoes.md` + `simulados.md` (dono único) + inbox próprio | existe |
+| `enem-slides` | subagent, hidden | — (recebe de `coord-teoria`) | `docs/estudos/enem/<area>/<tema>/slides.md` + inbox próprio | existe |
 
 ## Regras ENEM de conteúdo (inegociáveis)
 
 - Questões **oficiais**: só de provas do INEP (públicas para estudo), sempre citadas com `ano + caderno/cor + nº da questão` + fonte (link). NUNCA copiar questões de bancos comerciais pagos (SAS, Bernoulli etc.).
 - Questões **autorais**: marcadas `autoral — padrão ENEM` (área, texto-base, enunciado, 5 alternativas A–E, gabarito separado com resolução comentada + habilidade da matriz).
 - NUNCA inventar `questão do ENEM 20XX nº Y` sem conferência na prova oficial — questão falsa é falha CRÍTICA de conteúdo.
+- Dono de `simulados.md`: `enem-questoes` (integralmente; `coord-avaliacao` monta quizzes a partir dele, não o edita).
 - Teoria ENEM alinhada à matriz de referência vigente (competências/habilidades por área, conforme briefing `docs/pesquisa/enem-fontes.md`).
 - Redação: guia por competências (sem prometer correção oficial; feedback indica o que melhorar por competência).
 - TRI: explicar como conceito (proficiência, coerência pedagógica); sem prometer cálculo de nota oficial.

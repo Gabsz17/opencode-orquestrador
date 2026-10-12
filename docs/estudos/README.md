@@ -34,3 +34,10 @@
 - Cada trilha ENEM tem `questoes.md` (autorais `autoral — padrão ENEM` + oficiais INEP citadas), `simulados.md`, `slides.md` (Marp, `---` por slide) e `progresso.md` (scores por área + simulados + redação por competência).
 - Detalhes: `docs/estudos/enem/README.md`. Exemplo de estrutura: `docs/estudos/enem/exemplo/`.
 - Regras duras: nunca banco pago, nunca questão falsa atribuída ao INEP, TRI só como conceito.
+
+## Sua primeira sessão
+
+1. O mentor lê seu nível declarado e aplica um **quiz-diagnóstico curto** (5–7 itens, sem consulta) para verificar o nível real antes de congelar o plano.
+2. Cada sessão tem **duração estimada** no plano — quando chegar ao critério de parada, pare (o resto fica para a próxima).
+3. Quizzes e exercícios você responde em **`respostas-<modulo>.md`** (um arquivo por módulo); nunca edite o quiz nem o gabarito.
+4. Seu progresso fica em **`progresso.md`**: onde parou, scores, próxima revisão. Sumiu por mais de 7 dias? Na volta tem um quiz-relâmpago de reentrada.

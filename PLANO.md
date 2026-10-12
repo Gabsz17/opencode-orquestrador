@@ -63,10 +63,10 @@
 | 26. CICLO-10: aplicar achados do 9 | orquestrador + coords | ambos | standing order | LIBERADO + sync `5f0ed9b` | concluído |
 | 27. CICLO-11: Hn-retry + typos-banco + TEMPLATE-uso + changelog + be-auth | orquestrador + coords | ambos | standing order | LIBERADO (Hn 9 rotas; typos 0; backend wired) | concluído |
 | 28. CICLO-12: aplicar achados do 11 | orquestrador + coords | ambos | standing order | LIBERADO + sync | concluído |
-| 29. CICLO-13: Hn-retry + changelog + skills-audit + exemplo-template | orquestrador + coords | ambos | 4 ciclos | em curso | em curso |
-| 30. CICLO-14: aplicar achados do 13 | orquestrador + coords | ambos | 4 ciclos | pendente | pendente |
-| 31. CICLO-15: ADRs + links + resíduos | orquestrador + coords | ambos | 4 ciclos | pendente | pendente |
-| 32. CICLO-16: aplicar + gates + sync | orquestrador + coords | ambos | 4 ciclos | pendente | pendente |
+| 29. CICLO-13: Hn-retry + changelog + skills-audit + exemplo-template | orquestrador + coords | ambos | 4 ciclos | LIBERADO | concluído |
+| 30. CICLO-14: aplicar achados do 13 | orquestrador + coords | ambos | 4 ciclos | LIBERADO (exemplo sem drift) | concluído |
+| 31. CICLO-15: ADRs + links + resíduos | orquestrador + coords | ambos | 4 ciclos | LIBERADO (6 ADRs válidos; paridade 37/0) | concluído |
+| 32. CICLO-16: aplicar + gates + sync | orquestrador + coords | ambos | 4 ciclos | LIBERADO + sync | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

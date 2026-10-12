@@ -61,8 +61,8 @@
 | 24. CICLO-8: sweep fresco + top baratos | orquestrador + coords | ambos | standing order | LIBERADO + 5 gaps + sync | concluído |
 | 25. CICLO-9: Hn-retry + melhorias-pendentes + dry-run trilha + evals-dev | orquestrador + coords | ambos | standing order | LIBERADO | concluído |
 | 26. CICLO-10: aplicar achados do 9 | orquestrador + coords | ambos | standing order | LIBERADO + sync `5f0ed9b` | concluído |
-| 27. CICLO-11: Hn-retry + typos-banco + TEMPLATE-uso + changelog + be-auth | orquestrador + coords | ambos | standing order | em curso | em curso |
-| 28. CICLO-12: aplicar achados do 11 | orquestrador + coords | ambos | standing order | pendente | pendente |
+| 27. CICLO-11: Hn-retry + typos-banco + TEMPLATE-uso + changelog + be-auth | orquestrador + coords | ambos | standing order | LIBERADO (Hn 9 rotas; typos 0; backend wired) | concluído |
+| 28. CICLO-12: aplicar achados do 11 | orquestrador + coords | ambos | standing order | LIBERADO + sync | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

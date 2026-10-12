@@ -80,4 +80,5 @@ Ver seções 1-6 acima. Segundas fontes independentes: MEC + G1/CNN/Brasil Escol
 - 2026-10-12 (ciclo-4): `riep.inep.gov.br/collections/...` → transport error; websearch matriz/Hn → 0 resultados; `todamateria.com.br/matriz-de-referencia-enem/` → 404.
 - 2026-10-12 (ciclo-5): retry matriz v1 PDF → transport error; `provas-e-gabaritos/2023` viva (páginas de provas OK, só o `download.inep.gov.br` bloqueia).
 - 2026-10-12 (ciclo-9): retry `download.inep.gov.br/download/enem/matriz_referencia.pdf` (2012) → transport error (8 rotas). Padrão: `download.inep.gov.br` inteiro bloqueado neste runner; `www.gov.br/inep` navega normal.
+- 2026-10-12 (ciclo-11): retry `download.inep.gov.br/enem/outros_documentos/enem_matriz_referencia.pdf` → transport error (9 rotas).
 - Conclusão: nenhuma fonte primária acessível neste runner; códigos Hn seguem `não confirmado` (regra mantida, sem exceção).

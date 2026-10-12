@@ -1,4 +1,6 @@
-# Melhoria proposta
+# Melhoria proposta (ARQUIVO HISTÓRICO — anterior ao TEMPLATE; mantido como evidência, não como exemplo)
+
+> Para novas propostas, usar `docs/melhorias/TEMPLATE.md`. Este doc fica como registro do ciclo que o gerou.
 
 - Data: 2026-10-10
 - Padrão recorrente (3x onde/quando): PAT sem `workflow` bloqueou push de CI; `.env.example` ignorado por `.env.*`; strip de `//` quebrou URLs no jsonc

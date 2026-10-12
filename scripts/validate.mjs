@@ -11,7 +11,7 @@ const ok = (msg) => console.log(`ok - ${msg}`);
 const fail = (msg) => { errors.push(msg); console.error(`FAIL - ${msg}`); };
 
 // 1. Arquivos obrigatórios
-for (const f of ["opencode.jsonc", "README.md", ".env.example", "templates/PLANO.md", "templates/API.md", ".opencode/memory/MEMORIA.md"]) {
+for (const f of ["opencode.jsonc", "README.md", ".env.example", "templates/PLANO.md", "templates/API.md", "templates/PLANO-ESTUDOS.md", "docs/estudos/enem/README.md", ".opencode/memory/MEMORIA.md"]) {
   existsSync(join(root, f)) ? ok(`existe ${f}`) : fail(`faltando ${f}`);
 }
 

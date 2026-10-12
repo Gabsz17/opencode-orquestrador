@@ -1,6 +1,6 @@
 # opencode-orquestrador
 
-Sistema orquestrador para OpenCode: 1 orquestrador autônomo + 5 coordenadores + 19 workers + 3 skills.
+Sistema orquestrador para OpenCode: 1 orquestrador autônomo + 5 coordenadores + 19 workers + 8 skills — com modo estudos ENEM (`mentor` + 3 coords + 8 workers, `/estudar` e `/estudar-enem`).
 
 ## Como instalar
 
@@ -34,6 +34,15 @@ skills/
   debug-sistematico/   # bug -> reproduz -> correção mínima + regressão
   revisao-segura/      # segredos, auth, injeção, input (veredito por gravidade)
   testes-eficazes/     # pirâmide, bordas, zero flake
+  recall-ativo/        # teste prático com feedback antes de releer (estudos)
+  repeticao-espacada/  # revisões agendadas com reaprendizagem (estudos)
+  pratica-intercalada/ # misturar tipos, sem etiqueta do método (estudos)
+  explicar-para-aprender/ # elaboração + Feynman aplicado (estudos)
+  delegacao-verificada/ # escopo fechado + evidência + anti-alucinação (toda Task)
+modo estudos (`docs/estudos/`)
+  mentor (primary) + coord-teoria + coord-pratica + coord-avaliacao
+  /estudar <tema> [nível] — trilha geral; /estudar-enem <area> <tema> — ENEM por área
+  questões (autorais + oficiais INEP citadas), simulados, slides Marp, quizzes
 templates/
   PLANO.md API.md
   stacks/node-minimo/  # node http puro, lint/build/test prontos

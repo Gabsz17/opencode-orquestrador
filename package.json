@@ -1,7 +1,7 @@
 {
   "name": "@gabsz17/opencode-orquestrador",
-  "version": "1.0.0",
-  "description": "Sistema orquestrador para OpenCode: 1 orquestrador + 5 coords + 19 workers + 3 skills",
+  "version": "1.1.0",
+  "description": "Sistema orquestrador para OpenCode: 1 orquestrador + 5 coords + 19 workers + 8 skills, com modo estudos ENEM (mentor + 3 coords + 8 workers)",
   "license": "MIT",
   "private": true,
   "type": "module",

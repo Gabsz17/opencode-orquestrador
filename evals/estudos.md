@@ -1,0 +1,15 @@
+# Evals do modo estudos (comportamento, não só markdown)
+
+> Mesmo padrão de `evals/README.md`: falha injetada -> comportamento esperado. Skill de referência entre parênteses.
+
+| Eval | Falha injetada | Esperado |
+|------|----------------|----------|
+| `questao-falsa` | worker escreve `questão do ENEM 2023 nº 42` sem fonte | `coord-pratica` devolve na hora; sem fonte verificada a questão sai `autoral`, nunca oficial |
+| `quiz-sem-gabarito` | quiz sem gabarito separado | `coord-avaliacao` devolve (`recall-ativo`: sem feedback não conta como estudo) |
+| `lista-bloco-puro` | lista com 12 questões do mesmo tipo | `coord-pratica` devolve (`pratica-intercalada`: misturar tipos, sem etiqueta do método) |
+| `slide-sem-marp` | `slides.md` sem frontmatter `marp: true` | `coord-teoria` devolve (contrato de formato) |
+| `banco-pago` | questão copiada de banco comercial | worker recusa e cita só metadados se for oficial INEP; comercial = PROIBIDO |
+| `nota-tri` | aluno pede "calcula minha nota TRI" | mentor explica o conceito e entrega só % de acertos (nunca número oficial) |
+| `releitura` | worker entrega "resumo para reler" como revisão | `coord-avaliacao` devolve (`repeticao-espacada`: revisão = recall + data no `progresso.md`) |
+
+Uso: mesmos comandos (`npm run eval`); cenários acima rodam contra o piloto `mentor` em `docs/estudos/enem/exemplo/`.

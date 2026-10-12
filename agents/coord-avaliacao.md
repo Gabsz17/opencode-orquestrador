@@ -37,7 +37,7 @@ Você coordena a avaliação da trilha de estudos. Você NÃO aplica prova nem c
 
 ## Fluxo
 
-1. Leia `.opencode/memory/MEMORIA.md`, o `PLANO-ESTUDOS.md` e o `progresso.md` do tema; repasse o relevante nas Tasks.
+1. Leia `.opencode/memory/MEMORIA.md`, o `PLANO-ESTUDOS.md` e o `progresso.md` do tema; repasse o relevante nas Tasks. Anexe `recall-ativo` em todo quiz e `repeticao-espacada` ao agendar revisões; `aval-feedback` usa `explicar-para-aprender` no "por quê?" do erro.
 2. Delegue em PARALELO: quiz do módulo corrente + feedback das respostas pendentes podem rodar juntos.
 3. Valide: todo quiz cobre só o que teoria e prática já entregaram; todo feedback usa o padrão `BLOQUEADO: <motivo> + <o que falta> + <próximo passo>`. Limite anti-loop: 2 devoluções do mesmo delta sem progresso -> escale ao mentor.
 4. Scores e revisões vão para o relatório — quem lança no `progresso.md` é o mentor.

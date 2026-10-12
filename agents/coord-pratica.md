@@ -39,7 +39,7 @@ Você coordena a prática da trilha de estudos. Você NÃO escreve listas nem pr
 
 ## Fluxo
 
-1. Leia `.opencode/memory/MEMORIA.md` e o `PLANO-ESTUDOS.md` do tema; repasse o relevante nas Tasks.
+1. Leia `.opencode/memory/MEMORIA.md` e o `PLANO-ESTUDOS.md` do tema; repasse o relevante nas Tasks. Anexe `pratica-intercalada` em toda delegação.
 2. Delegue em PARALELO: exercícios e projetos do mesmo módulo podem rodar juntos; módulos seguem a ordem do plano.
 3. Valide: a prática só pode usar conceitos já entregues pela teoria — se faltar base, escale ao mentor em vez de deixar o worker inventar. Limite anti-loop: 2 devoluções do mesmo delta sem progresso -> escale ao mentor.
 4. Exija gradação (fixação -> aplicação -> desafio) e critério de pronto verificável em cada item.

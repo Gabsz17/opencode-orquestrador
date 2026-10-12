@@ -7,7 +7,7 @@
 - BaseURL (via env): N/A — modo estudos não tem HTTP.
 - Auth: N/A — sem login; credenciais `BROWSER_*` só via env se `coord-pesquisa` for acionado (nunca no repo).
 - Erros padronizados: N/A (HTTP). Erro pedagógico padronizado em texto: `BLOQUEADO: <motivo> + <o que falta> + <próximo passo>`.
-- Versão/data: v2026-10-12-enem / 2026-10-12 (antecessora: v2026-10-11-estudos).
+- Versão/data: v2026-10-12-enem-skills / 2026-10-12 (antecessoras: v2026-10-11-estudos, v2026-10-12-enem).
 
 ## Agentes (contrato de interfaces)
 
@@ -72,8 +72,20 @@
 | `docs/estudos/README.md` (adicionar seção ENEM) | coord-plataforma | orquestrador |
 | `docs/pesquisa/enem-fontes.md` (matriz, edital, provas oficiais, Marp, regras de citação) | coord-pesquisa via `web-researcher` | orquestrador |
 
-## Quebras de compatibilidade
+## Skills (contrato de anexação)
 
+> Skills vivem em `skills/<nome>/SKILL.md` (padrão do repo — ver ADR 0004). Orquestrador/coords anexam a skill na Task; workers seguem o protocolo. Base de evidência pedagógica: Dunlosky et al. 2013 (ver `docs/pesquisa/skills-orquestrador-estudos.md`).
+
+| Skill | Anexada por | Gatilho |
+|---|---|---|
+| `recall-ativo` | `mentor`, `coord-teoria`, `coord-pratica`, `coord-avaliacao` | quiz, exercício, questão, revisão, fechar módulo |
+| `repeticao-espacada` | `mentor`, `coord-avaliacao` | plano, `progresso.md`, quiz de revisão |
+| `pratica-intercalada` | `coord-pratica` | listas, projetos, `questoes.md`, `simulados.md` |
+| `explicar-para-aprender` | `coord-teoria`, `coord-avaliacao` (feedback) | conceito, exemplo, `slides.md`, correção |
+| `delegacao-verificada` | `orquestrador` + todos os coords (dev e estudos) | toda Task (escopo fechado + evidência) |
+| `debug-sistematico` / `testes-eficazes` / `revisao-segura` | coords dev (inalterado) | bugs / QA / auth-segredos |
+
+## Quebras de compatibilidade
 | Data | Mudança | Justificativa | Impacto (frontend/integrações) |
 |------|---------|---------------|---------------------------------|
 | 2026-10-12 | `coord-teoria`/`coord-pratica` ganham 1 worker cada; `mentor` ganha fluxo ENEM | Foco ENEM sem novo coord; workers antigos inalterados | Nenhum: times antigos continuam resolvendo |

@@ -41,7 +41,7 @@ for (const file of readdirSync(agentsDir).filter((f) => f.endsWith(".md"))) {
     if (name === "*") continue;
     if (!agentFiles.has(name) && !["read", "edit", "glob", "grep", "list", "bash", "task", "todowrite", "webfetch", "websearch", "question", "external_directory", "doom_loop", "skill"].includes(name)) {
       // ignora permissões de ferramenta; só valida nomes com prefixo de agent
-      if (/^(be-|fe-|plat-|qa-|web-|coord-|orquestrador)/.test(name) && !agentFiles.has(name)) fail(`${file} referencia agent inexistente: ${name}`);
+      if (/^(be-|fe-|plat-|qa-|web-|coord-|orquestrador|mentor|teoria-|pratica-|aval-|enem-)/.test(name) && !agentFiles.has(name)) fail(`${file} referencia agent inexistente: ${name}`);
     }
   }
 }
@@ -63,7 +63,7 @@ ok(`agents verificados (${agentFiles.size})`);
 }
 
 // 5. Skills referenciadas existem
-for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes"]) {
+for (const s of ["debug-sistematico", "revisao-segura", "testes-eficazes", "recall-ativo", "repeticao-espacada", "pratica-intercalada", "explicar-para-aprender", "delegacao-verificada"]) {
   existsSync(join(root, "skills", s, "SKILL.md")) ? ok(`skill ${s}`) : fail(`skill faltando: ${s}`);
 }
 

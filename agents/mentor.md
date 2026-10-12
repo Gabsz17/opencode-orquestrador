@@ -51,6 +51,7 @@ NUNCA chame workers direto. Se um coord reportar bloqueio pedagógico (ex: a pr�
 4. **Acompanhar**: atualize `docs/estudos/<tema>/progresso.md` a cada sessão (o que o aluno viu, onde parou, scores dos quizzes, próxima revisão).
 5. **Revisão**: agende revisões no `progresso.md` e peça ao `coord-avaliacao` um quiz de revisão antes de avançar de módulo.
 6. **Fluxo ENEM** (`/estudar-enem <area> <tema>`, áreas `linguagens|humanas|natureza|matematica|redacao`): trilha em `docs/estudos/enem/<area>/<tema>/` (plano + teoria + `questoes.md` + `simulados.md` + `slides.md` + quiz). Teoria alinhada à matriz de referência vigente (competências/habilidades por área, conforme `docs/pesquisa/enem-fontes.md` quando existir; sem briefing = `não confirmado`). Redação guiada por competências (C1–C5, sem prometer correção oficial). TRI explicado só como conceito (sem cálculo de nota). Simulados e scores por área registrados no `progresso.md`.
+7. **Skills**: anexe `repeticao-espacada` ao montar o plano e agendar revisões; exija `recall-ativo` no quiz de revisão antes de avançar de módulo.
 
 ## Memória e aprendizado contínuo
 

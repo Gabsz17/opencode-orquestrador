@@ -20,7 +20,7 @@
 
 ## 2. Contratos vigentes
 
-- `API.md` (versão/data): `API.md` v2026-10-12-enem (nesta raiz) — adaptado: sem rotas HTTP; contrato = interfaces de agentes/comandos/memória.
+- `API.md` (versão/data): `API.md` v2026-10-12-enem-skills (nesta raiz) — adaptado: sem rotas HTTP; contrato = interfaces de agentes/comandos/memória.
 - Convenções (pastas, `.env.example`, Conventional Commits):
   - Pastas: `agents/<nome>.md` (1 agente por arquivo, frontmatter + corpo pt-BR), `commands/estudar.md`, `commands/estudar-enem.md`, `templates/PLANO-ESTUDOS.md` (com secao ENEM opcional), `docs/estudos/<tema>/` (trilhas), `docs/estudos/enem/<area>/<tema>/` (trilhas ENEM com `questoes.md`, `slides.md`, `simulados.md`), `.opencode/memory/inbox/<agente>.md`.
   - `.env.example`: não se aplica (modo estudos não usa credencial; `BROWSER_*` só se `coord-pesquisa` for acionado, via env, nunca no repo).
@@ -41,6 +41,10 @@
 | 4. Pesquisa ENEM (matriz, edital, provas oficiais, Marp) | coord-pesquisa | . | pergunta + critério | briefing `docs/pesquisa/enem-fontes.md` | pendente |
 | 5. Implementar foco ENEM (2 workers + comando + template + docs) | coord-plataforma | . | API.md v2026-10-12-enem | arquivos ENEM | pendente |
 | 6. Gates ENEM | coord-qualidade | . | arquivos ENEM prontos | LIBERADO | pendente |
+| 7. Pesquisa skills (orquestrador + estudos) | coord-pesquisa | . | pergunta + critério | briefing + 5 SKILL.md prontas | concluído |
+| 8. Aplicar skills + melhorias (validate, evals, README, ADR) | orquestrador (exceção depth-limit) | . | API.md v2026-10-12-enem-skills | skills + wiring + melhorias | em curso |
+| 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
+| 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | repo + commit (+ push se auth) | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -60,6 +64,10 @@
 - [ ] Arquivos ENEM entregues (2 workers + comando + template + docs)
 - [ ] `npm run validate` verde + grep de segredos 0 nos novos
 - [ ] `coord-qualidade: LIBERADO (ENEM)` + commit + push
+- [x] Pesquisa skills concluída (5 skills com evidência Dunlosky-2013 + `delegacao-verificada` dev)
+- [ ] Skills criadas + wiring nos coords + briefing
+- [ ] Melhorias aplicadas (validate prefixos + skills, `evals/estudos.md`, README, package 1.1.0, ADR 0004)
+- [ ] Gates finais LIBERADO + repo estudos + push final
 
 Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 
@@ -82,6 +90,9 @@ Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 | 2026-10-12 | Foco ENEM: 2 workers novos (`enem-questoes` sob `coord-pratica`, `enem-slides` sob `coord-teoria`) + comando `/estudar-enem` + secao ENEM no template; sem novo coord | Reusa hierarquia existente; ENEM e pratica/teoria por area, nao um time paralelo | orquestrador |
 | 2026-10-12 | Questoes: autorais marcadas `autoral - padrao ENEM` + oficiais INEP citadas (ano + caderno/cor + n.); NUNCA reproduzir bancos comerciais pagos nem inventar `questao do ENEM 20XX n. Y` | Provas INEP sao publicas para estudo; banco pago tem direito autoral; questao falsa e falha CRITICA de conteudo | orquestrador |
 | 2026-10-12 | Slides em markdown compativel Marp (`slides.md`, `---` por slide), sem dependencia nova; render Marp vira debito | Markdown puro funciona no preview; instalar toolchain de slides seria escopo extra | orquestrador |
+| 2026-10-12 | Exceção depth-limit: orquestrador aplica diffs de config (`agents/`, `commands/`, `templates/`, `docs/`, `skills/`) propostos e revisados pelos coords, em vez de re-delegar | Coords em sessão subagente não conseguem invocar `plat-*`/`web-*` (depth 1); 1 tentativa sem retry, depois pivô; sem produto `src/**` envolvido — só configs de raiz | orquestrador |
+| 2026-10-12 | 5 skills (4 pedagógicas com evidência + `delegacao-verificada`); diff/ADR/contexto NÃO viram skill | Skill proliferation dilui descoberta; gatilho raro = skill morta | coord-pesquisa c/ orquestrador |
+| 2026-10-12 | Wiring mínimo: `delegacao-verificada` via `orquestrador.md` (cobre os 5 coords dev via Tasks); skills de estudos nos 4 agents de estudos; workers herdam via Task | Evita 5+ edições mecânicas nos coords dev; mapeamento completo persiste no `API.md` | orquestrador |
 
 ### Contador por erro (3 tentativas no mesmo erro -> pivota)
 

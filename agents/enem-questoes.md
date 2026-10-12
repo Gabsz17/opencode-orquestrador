@@ -44,7 +44,7 @@ Você escreve questões do foco ENEM da trilha de estudos. Responda em pt-BR.
 ## Entrega
 
 - `questoes.md`: enunciados + 5 alternativas + gabarito separado com resolução + habilidade.
-- `simulados.md`: lista organizada por área/tempo/critério de pronto (o banco pronto é débito pós-ENEM do `coord-avaliacao`).
+- `simulados.md`: lista organizada por área/tempo/critério de pronto (banco pronto = débito futuro do próprio `enem-questoes`; `coord-avaliacao` só consome `simulados.md` para montar quizzes, nunca edita).
 
 ## Relatório (obrigatório)
 

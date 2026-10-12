@@ -38,7 +38,7 @@
 
 ## Slides (contrato de formato)
 
-- Arquivo `slides.md` em markdown compatível Marp: frontmatter com `marp: true`, um slide por seção separada por `---`, um ideia por slide, sem dependência nova no repo.
+- Arquivo `slides.md` em markdown compatível Marp: frontmatter com `marp: true` (`theme: default` recomendado), um slide por seção separada por `---`, uma ideia por slide, sem dependência nova no repo.
 - Render/export (Marp CLI, PDF) é débito técnico, não desta missão.
 
 ## Comandos
@@ -46,7 +46,7 @@
 | Comando | Arquivo | Uso | Saída |
 |---------|---------|-----|-------|
 | `/estudar <tema> [nível]` | `commands/estudar.md` | Invoca `mentor` com tema + nível (`iniciante\|intermediario\|avancado`, default `iniciante`) | Trilha em `docs/estudos/<tema>/` + plano + primeira lição |
-| `/estudar-enem <area> <tema>` | `commands/estudar-enem.md` | Invoca `mentor` com foco ENEM (área: `linguagens\|humanas\|natureza\|matematica\|redacao`) | Trilha em `docs/estudos/enem/<area>/<tema>/` (plano + teoria + `questoes.md` + `slides.md` + quiz) |
+| `/estudar-enem <area> <tema>` | `commands/estudar-enem.md` | Invoca `mentor` com foco ENEM (área: `linguagens\|humanas\|natureza\|matematica\|redacao`) | Trilha em `docs/estudos/enem/<area>/<tema>/` (plano + teoria + `questoes.md` + `simulados.md` + `slides.md` + quiz + `progresso.md`) |
 
 ## Memória (contrato)
 
@@ -80,7 +80,7 @@
 | Skill | Anexada por | Gatilho |
 |---|---|---|
 | `recall-ativo` | `mentor`, `coord-teoria`, `coord-pratica`, `coord-avaliacao` | quiz, exercício, questão, revisão, fechar módulo |
-| `repeticao-espacada` | `mentor`, `coord-avaliacao` | plano, `progresso.md`, quiz de revisão |
+| `repeticao-espacada` | `mentor`, `coord-teoria` (só `enem-slides`), `coord-avaliacao` | plano, `progresso.md`, quiz de revisão |
 | `pratica-intercalada` | `coord-pratica` | listas, projetos, `questoes.md`, `simulados.md` |
 | `explicar-para-aprender` | `coord-teoria`, `coord-avaliacao` (feedback) | conceito, exemplo, `slides.md`, correção |
 | `delegacao-verificada` | `orquestrador` + todos os coords (dev e estudos) | toda Task (escopo fechado + evidência) |

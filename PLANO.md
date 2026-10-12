@@ -46,6 +46,10 @@
 | 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
 | 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | CRIADO no GitHub + push `52fcd49` (`main`), verificado via `ls-remote` | concluído |
 | 11. Auditoria mentor (15 achados) + correções | coord-qualidade (audita) + orquestrador (aplica) | . | modo mentor | 15 correções aplicadas + LIBERADO (só cosmético 5./5. corrigido) | concluído |
+| 12. Auditoria total (falhas e erros) + correções | coord-qualidade (caça) + orquestrador (corrige) | . | modo mentor inteiro | zero falha conhecida | em curso |
+| 13. Plano de melhoria 50+ págs (`docs/plano-melhoria/`) | orquestrador | . | diagnóstico + backlog + roadmap | plano completo | pendente |
+| 14. Aplicar melhorias em ondas verificadas | orquestrador | . | backlog priorizado | ondas verdes + commits | pendente |
+| 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | lista ou relatório | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

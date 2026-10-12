@@ -46,7 +46,7 @@
 - Fontes: http://download.inep.gov.br/educacao_basica/enem/nota_tecnica/2011/nota_tecnica_tri.pdf ; https://download.inep.gov.br/publicacoes/institucionais/avaliacoes_e_exames_da_educacao_basica/entenda_a_sua_nota_no_enem_guia_do_participante.pdf ; https://www.gov.br/inep/pt-br/centrais-de-conteudo/noticias/enem/parametros-dos-itens-sao-divulgados-de-forma-inedita
 - 3PL (a discriminação, b dificuldade, c acerto casual); comparabilidade; coerência; EAP; mesmos acertos != mesma nota; redação separada. Nunca calcular nota.
 
-## 7. Recomendação ao coord-plataforma (enem-questoes / enem-slides)
+## 7. Recomendação a coord-pratica / coord-teoria (runtime; coord-plataforma só cria os agents)
 
 1. enem-questoes: nunca embutir questão integral; guardar só metadados (ano/caderno/cor/nº/habilidade) + link PDF oficial + gabarito-letra; citação curta só com fonte.
 2. enem-slides: todo .md de slide começa com `marp: true`; um `---` por quebra; sem HTML arbitrário salvo `<br>`/`<style>`; validar preview VS Code + export.

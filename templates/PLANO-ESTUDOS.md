@@ -46,10 +46,7 @@
 
 ## 8. Progresso
 
-> Estado vive em `progresso.md` (o plano guarda metas, o progresso guarda estado). Não duplicar números aqui.
-
-- Última sessão (obrigatória, AAAA-MM-DD — retorno após >7 dias = quiz-relâmpago de reentrada):
-- Próxima revisão:
+> Estado vive em `progresso.md` (o plano guarda metas, o progresso guarda estado). Não duplicar números aqui — `Última sessão` e `Próxima revisão`: ver `progresso.md` (fonte única).
 
 ## 9. ENEM (opcional — só para trilhas em `docs/estudos/enem/<area>/<tema>/`)
 

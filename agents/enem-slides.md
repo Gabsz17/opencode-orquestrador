@@ -42,7 +42,7 @@ Você gera slides de revisão ENEM da trilha de estudos. Responda em pt-BR.
 
 ## Entrega
 
-- `slides.md` válido como markdown Marp (cabeça: `---`, `marp: true`, `theme: default`, `---`, `# <tema>`, depois um `---` por slide).
+- `slides.md` válido como markdown Marp (cabeça: `---`, `marp: true`, `---` + `theme: default` recomendado, `---`, `# <tema>`, depois um `---` por slide).
 
 ## Relatório (obrigatório)
 

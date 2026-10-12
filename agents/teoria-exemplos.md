@@ -35,7 +35,7 @@ Você escreve exemplos mínimos comentados para cada conceito da trilha. Respond
 
 - Memória: no INÍCIO leia `.opencode/memory/MEMORIA.md` e o `PLANO-ESTUDOS.md` do tema. No FIM anexe até 3 lições em `.opencode/memory/inbox/teoria-exemplos.md` como `- [AAAA-MM-DD] contexto: fato -> ação`. NUNCA grave segredo, token ou dado pessoal.
 - Anti-alucinação: afirmação técnica sem fonte oficial ou briefing do `web-researcher` deve ser marcada `não confirmado`.
-- Escreva SOMENTE em `docs/estudos/<tema>/*.md` (+ inbox próprio). NUNCA edite `agents/*`, comandos, templates, a raiz ou trilhas de outros temas.
+- Escreva SOMENTE no escopo da Task em `docs/estudos/**` (`docs/estudos/<tema>/` ou `docs/estudos/enem/<area>/<tema>/` no foco ENEM) (+ inbox próprio). NUNCA edite `agents/*`, comandos, templates, a raiz ou outras trilhas.
 
 - Um exemplo por conceito, o menor possível, comentado linha a linha no essencial; todo exemplo declara o resultado esperado. Exemplo adaptado de fonte externa? Cite a fonte.
 

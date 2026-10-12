@@ -81,4 +81,5 @@ Ver seções 1-6 acima. Segundas fontes independentes: MEC + G1/CNN/Brasil Escol
 - 2026-10-12 (ciclo-5): retry matriz v1 PDF → transport error; `provas-e-gabaritos/2023` viva (páginas de provas OK, só o `download.inep.gov.br` bloqueia).
 - 2026-10-12 (ciclo-9): retry `download.inep.gov.br/download/enem/matriz_referencia.pdf` (2012) → transport error (8 rotas). Padrão: `download.inep.gov.br` inteiro bloqueado neste runner; `www.gov.br/inep` navega normal.
 - 2026-10-12 (ciclo-11): retry `download.inep.gov.br/enem/outros_documentos/enem_matriz_referencia.pdf` → transport error (9 rotas).
+- 2026-10-12 (ciclo-13): retry matriz v1 PDF → transport error (10 rotas). Skills audit: 0 URLs + 0 rede em `skills/`; exemplo ENEM espelha template 9/9.
 - Conclusão: nenhuma fonte primária acessível neste runner; códigos Hn seguem `não confirmado` (regra mantida, sem exceção).

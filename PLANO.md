@@ -54,8 +54,8 @@
 | 17. CICLO-1: verificar repos + benchmark + opinião + plano + execução + reanálise | orquestrador + coords | ambos | repos verdes | LIBERADO + sync `fc63d90` + lista p/ confirmação | concluído |
 | 18. CICLO-2: V2? + judge + handoffs + redação-rápida + multitrilhas + links | orquestrador + coords | ambos | lista confirmada | LIBERADO + sync `7009fd6` | concluído |
 | 19. CICLO-3: Hn? + redação-arquivo + install + changelog + gabaritos | orquestrador + coords | ambos | lista confirmada | LIBERADO + sync `42781c8` (Hn pendente: PDF bloqueado) | concluído |
-| 20. CICLO-4: Hn-alt + judge-tolerante + backup-restore + links + gabaritos | orquestrador + coords | ambos | lista confirmada | Hn sem fonte (5 rotas falhas); resto LIBERADO | concluído |
-| 21. CICLO-5 (proposto): RIEP-retry + render-Marp + multitrilha-e2e + links | orquestrador + coords | ambos | lista abaixo | aguardando confirmação | pendente |
+| 20. CICLO-4: Hn-alt + judge-tolerante + backup-restore + links + gabaritos | orquestrador + coords | ambos | lista confirmada | LIBERADO + sync `1a3e88a` (Hn sem fonte; meu regex quebrou o eval e foi corrigido) | concluído |
+| 21. CICLO-5 (proposto): RIEP-retry + gabaritos-restantes + judge-doc + links | orquestrador + coords | ambos | lista abaixo | aguardando confirmação | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

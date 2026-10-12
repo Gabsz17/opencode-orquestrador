@@ -83,4 +83,5 @@ Ver seções 1-6 acima. Segundas fontes independentes: MEC + G1/CNN/Brasil Escol
 - 2026-10-12 (ciclo-11): retry `download.inep.gov.br/enem/outros_documentos/enem_matriz_referencia.pdf` → transport error (9 rotas).
 - 2026-10-12 (ciclo-13): retry matriz v1 PDF → transport error (10 rotas). Skills audit: 0 URLs + 0 rede em `skills/`; exemplo ENEM espelha template 9/9.
 - 2026-10-12 (ciclo-17): retry `download.inep.gov.br/download/enem/matriz_referencia.pdf` → transport error (11 rotas). Docs usam code-spans (0 markdown links → nada a quebrar; amostra `simulados-modelo/*`, `API.md`, `progresso-modelo.md` existe). Commands 4/4 consistentes. Stacks: `node-minimo` com piloto verde no eval; `next-fastapi` é esqueleto-README por desenho (sem falso piloto).
+- 2026-10-12 (ciclo-19): retry matriz v1 PDF → transport error (12 rotas). Inbox vazio (só `.gitkeep`, nada a promover). Skills 8/8 com 26–27 linhas, uniformes, sem evolução pendente.
 - Conclusão: nenhuma fonte primária acessível neste runner; códigos Hn seguem `não confirmado` (regra mantida, sem exceção).

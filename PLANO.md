@@ -49,7 +49,7 @@
 | 12. Auditoria total (falhas e erros) + correções | coord-qualidade (caça) + orquestrador (corrige) | . | modo mentor inteiro | zero falha conhecida | em curso |
 | 13. Plano de melhoria 50+ págs (`docs/plano-melhoria/`) | orquestrador | . | diagnóstico + backlog + roadmap | plano completo | pendente |
 | 14. Aplicar melhorias em ondas verificadas | orquestrador | . | backlog priorizado | ondas verdes + commits | pendente |
-| 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | lista ou relatório | pendente |
+| 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | LISTA RESIDUAL (11 MELs + 1 nota) | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

@@ -10,6 +10,7 @@
 - Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
+- [2026-10-12] avaliação-final: 14 residuais (11 MELs futuras + 3 baixos, 2 corrigidos na hora) -> ação: lista residual com dono no resumo; proposta sem implementação entra na lista com dono explícito
 - [2026-10-12] auditoria-mentor: 15 achados viraram 15 correções + LIBERADO (diagnóstico, gate score, respostas, C1–C5, 1ª sessão, carga, reentrada, progresso único, skills, níveis, 6 evals, a11y) -> ação: repetir checklist 1-a-1 em futuras auditorias
 - [2026-10-12] `gh auth login` colando PAT fine-grained sem escopo de criação falha (`createRepository` negado) -> ação: refazer via navegador (OAuth) ou criar repo no github.com/new e só dar push
 - [2026-10-12] gh CLI 2.102.0 instalado em `C:\Program Files\GitHub CLI` (fora do PATH; corrigido no PATH do usuário) mas SEM login (`gh auth status` = not logged in) -> ação: dono roda `gh auth login` (GitHub.com + HTTPS + browser, 1 clique); depois orquestrador cria repos sozinho via `gh repo create`

@@ -11,9 +11,9 @@
 ## Como pedir cada coisa
 
 - **Questões:** autorais marcadas `autoral — padrão ENEM` (5 alternativas + gabarito separado com resolução + habilidade); oficiais só do INEP com `ano + caderno/cor + nº + link`. NUNCA peça/aceite questão de banco pago nem `questão do ENEM 20XX nº Y` sem fonte.
-- **Simulados:** `simulados.md` (questões + tempo + critério de pronto). Banco pronto é débito pós-ENEM.
+- **Simulados:** `simulados.md` (questões + tempo + critério de pronto). Banco modelo pronto: `docs/estudos/enem/simulados-modelo/<area>.md` (só autorais).
 - **Slides:** `slides.md` em Marp (`marp: true`, `---` por slide, 1 ideia por slide). Render PDF é débito.
-- **Redação:** guia por competências C1–C5 (o que melhorar por competência; sem nota oficial).
+- **Redação:** guia por competências C1–C5 (o que melhorar por competência; sem nota oficial). Proposta a partir de `docs/estudos/enem/redacao-modelo.md`; texto em `redacao-<tema>.md`.
 - **TRI:** só conceito (proficiência, coerência); sem cálculo oficial.
 
 ## Regras

@@ -59,6 +59,8 @@
 | 22. CICLO-6: banco-regressão + V1-check + READMEs + rotina | orquestrador | ambos | autônomo | validate+eval verdes; READMEs íntegros | concluído |
 | 23. CICLO-7: changelog + redação-modelo + proposta-antiga + Hn-retry | orquestrador + coords | ambos | standing order | LIBERADO | concluído |
 | 24. CICLO-8: sweep fresco + top baratos | orquestrador + coords | ambos | standing order | LIBERADO + 5 gaps + sync | concluído |
+| 25. CICLO-9: Hn-retry + melhorias-pendentes + dry-run trilha + evals-dev | orquestrador + coords | ambos | standing order | em curso | em curso |
+| 26. CICLO-10: aplicar achados do 9 | orquestrador + coords | ambos | standing order | pendente | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

@@ -7,3 +7,5 @@
 | `flake` | teste que falha 1 em 5 | marca como bug do teste, não do código (skill `testes-eficazes`, zero `sleep` fixo) |
 
 Uso: `npm run eval` (roda os 3 cenários contra o piloto + checa o relatório no formato dos coords).
+
+Para o modo estudos: `evals/estudos.md` (15 cenários + judge de 3 eixos + regressão do banco 40 autorais) — mesmos comandos, gate do `coord-qualidade`.

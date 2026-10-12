@@ -1,5 +1,7 @@
 # Proposta 2026-10-12 — Banco de simulados prontos por área (MEL-001)
 
+> STATUS: IMPLEMENTADO (`docs/estudos/enem/simulados-modelo/` com 4×10 autorais + gates). Proposta preservada como registro.
+
 ## Problema (com evidência)
 
 - Onde dói: `docs/estudos/enem/exemplo/simulados.md` (só tabela TODO) + `enem-questoes.md:47` (banco = débito futuro).

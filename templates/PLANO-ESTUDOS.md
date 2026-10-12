@@ -54,5 +54,5 @@
 - Área (`linguagens|humanas|natureza|matematica|redacao`):
 - Competências/habilidades da matriz neste tema (com fonte; sem briefing = `não confirmado`):
 - Simulados previstos (`simulados.md`, tempo, critério de pronto):
-- Redação (se área `redacao`: competências C1–C5 trabalhadas + reescrita obrigatória dos trechos fracos com 2ª correção do delta; texto do aluno em `redacao-<tema>.md`, nunca editado pelo corretor; sem promessa de nota oficial):
+- Redação (se área `redacao`: competências C1–C5 trabalhadas + reescrita obrigatória dos trechos fracos com 2ª correção do delta; texto do aluno em `redacao-<tema>.md` a partir de `docs/estudos/enem/redacao-modelo.md`, nunca editado pelo corretor; sem promessa de nota oficial):
 - TRI (só como conceito; sem cálculo oficial):

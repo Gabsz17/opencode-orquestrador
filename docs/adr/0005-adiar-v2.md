@@ -8,5 +8,7 @@
 - Recheck 2026-10-12 (ciclo-3): changelog segue em `v1.19.0`, sem trigger. PDFs gov.br (matriz v1 + MEC) com transport error neste runner — Hn reais seguem `não confirmado`.
 - Recheck 2026-10-12 (ciclo-4): changelog segue em `v1.19.0`, sem trigger.
 - Rotina (ciclo-5): recheck de changelog a cada 2 ciclos (2 ciclos seguidos sem mudança); matriz PDF segue bloqueada (6 rotas falhas no total).
+- Rotina (ciclo-9): changelog passa a cada 3 ciclos (4 fetches seguidos em `v1.19.0`; custo do fetch integral não compensa); próximo devido no ciclo-10.
 - Recheck 2026-10-12 (ciclo-7): changelog segue em `v1.19.0`, sem trigger; matriz PDF segue bloqueada (7 rotas).
+- Recheck 2026-10-12 (ciclo-10): changelog segue em `v1.19.0`, sem trigger.
 - Consequência: zero churn agora; migração mecânica depois (1 script + gate).

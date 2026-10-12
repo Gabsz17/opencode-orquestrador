@@ -10,6 +10,7 @@
 - Token para CI precisa de escopo `workflow` (classic: `repo` + `workflow`)
 
 ## Aprendizados (recentes primeiro)
+- [2026-10-12] ciclos-9+10 LIBERADO (dry-run, redação plugada, exemplos espelho, 8 rotas Hn, stale-fix simulados) -> ação: manter standing order; próximo = retry Hn + proposta antiga + links
 - [2026-10-12] ciclos-7+8 LIBERADO (redação-modelo, MCP path relativo, install .sh, validate sem falso-verde, contagens, comando explícito) -> ação: manter standing order 2 ciclos + consolidado
 - [2026-10-12] STANDING ORDER do dono: "segue sempre 2 ciclos + consolidado" (2 ciclos por resposta, para só em "para") -> ação: cada resposta = 2 ciclos + resumo curto + próxima lista
 - [2026-10-12] ciclos-5+6 LIBERADO (Hn 6 rotas, 40/40 gabaritos, ADR-0006, banco-regressão, V1-check, READMEs íntegros) -> ação: recheck changelog a cada 2 ciclos; Hn só com PDF oficial

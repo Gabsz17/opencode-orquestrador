@@ -12,7 +12,7 @@ foreach ($d in $dirs) {
   if (Test-Path $src) {
     if (Test-Path (Join-Path $Destino $d)) {
       if (!(Test-Path $backup)) { New-Item -ItemType Directory $backup | Out-Null }
-      & $ensure (Join-Path $backup $d)
+      # sem pre-criar backup/<d>: Copy-Item cria <d> no nível certo (pre-criar nidificava agents/agents)
       Copy-Item (Join-Path $Destino $d) (Join-Path $backup $d) -Recurse -Force
     }
     & $ensure (Join-Path $Destino $d)

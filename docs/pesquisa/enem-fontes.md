@@ -73,3 +73,9 @@ Ver seções 1-6 acima. Segundas fontes independentes: MEC + G1/CNN/Brasil Escol
 - Licença expressa INEP para republicação integral / banco comercial.
 - Contagem Hn exata por área sem abrir PDF v1 (não afirmar).
 - URL DOU do edital ENEM 2026 (só notícias secundárias acessadas; buscar DOU antes de citar número).
+
+## 11. Tentativas de fonte primária Hn (log honesto)
+
+- 2026-10-12 (ciclo-3): `download.inep.gov.br/.../enem_matriz_de_referencia_v1.pdf` → transport error; `portal.mec.gov.br/.../matriz_referencia_novoenem.pdf` → transport error.
+- 2026-10-12 (ciclo-4): `riep.inep.gov.br/collections/...` → transport error; websearch matriz/Hn → 0 resultados; `todamateria.com.br/matriz-de-referencia-enem/` → 404.
+- Conclusão: nenhuma fonte primária acessível neste runner; códigos Hn seguem `não confirmado` (regra mantida, sem exceção).

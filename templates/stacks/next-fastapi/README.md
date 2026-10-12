@@ -1,5 +1,7 @@
 # Stack next-fastapi (esqueleto — o orquestrador preenche)
 
+> Status: intencional (só README; sem piloto — veredicto QA ciclos-17/18, não reabrir como "stack sem código").
+
 ```
 app/            # fe-pages (Next routes)
 src/components/ # fe-components

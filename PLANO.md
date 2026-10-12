@@ -52,7 +52,8 @@
 | 15. Avaliação final + lista residual ou relatório | coord-qualidade + orquestrador | . | tudo | LISTA RESIDUAL (11 MELs + 1 nota) | concluído |
 | 16. Aplicar lista residual (MEL-001…011) | orquestrador | . | specs ondas 3–4 | 11 MELs + LIBERADO + sync `f9154ea` | concluído |
 | 17. CICLO-1: verificar repos + benchmark + opinião + plano + execução + reanálise | orquestrador + coords | ambos | repos verdes | LIBERADO + sync `fc63d90` + lista p/ confirmação | concluído |
-| 18. CICLO-2: V2? + judge + handoffs + redação-rápida + multitrilhas + links | orquestrador + coords | ambos | lista confirmada | em curso | em curso |
+| 18. CICLO-2: V2? + judge + handoffs + redação-rápida + multitrilhas + links | orquestrador + coords | ambos | lista confirmada | LIBERADO + sync `7009fd6` | concluído |
+| 19. CICLO-3 (proposto): matriz-Hn real + redação-foto + streak-ritual + install-testado + links | orquestrador + coords | ambos | lista abaixo | aguardando confirmação | pendente |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

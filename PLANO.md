@@ -67,6 +67,8 @@
 | 30. CICLO-14: aplicar achados do 13 | orquestrador + coords | ambos | 4 ciclos | LIBERADO (exemplo sem drift) | concluído |
 | 31. CICLO-15: ADRs + links + resíduos | orquestrador + coords | ambos | 4 ciclos | LIBERADO (6 ADRs válidos; paridade 37/0) | concluído |
 | 32. CICLO-16: aplicar + gates + sync | orquestrador + coords | ambos | 4 ciclos | LIBERADO + sync | concluído |
+| 33. CICLO-17: Hn-retry + links-internos + commands + stacks | orquestrador + coords | ambos | standing order | Hn 11 rotas; resto LIMPO (0 links, 4/4 cmds, stacks ok) | concluído |
+| 34. CICLO-18: aplicar + gates + sync | orquestrador + coords | ambos | standing order | em curso | em curso |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 

@@ -44,7 +44,7 @@
 | 7. Pesquisa skills (orquestrador + estudos) | coord-pesquisa | . | pergunta + critério | briefing + 5 SKILL.md prontas | concluído |
 | 8. Aplicar skills + melhorias (validate, evals, README, ADR) | orquestrador (exceção depth-limit) | . | API.md v2026-10-12-enem-skills | skills + wiring + melhorias | em curso |
 | 9. Gates finais (ENEM + skills + melhorias) | coord-qualidade | . | tudo pronto | LIBERADO | pendente |
-| 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | repo local + commit `52fcd49`; GitHub: repo ainda não existe (`ls-remote` = not found, auth OK) — aguardando criação | aguardando dono |
+| 10. Repo `opencode-modo-estudos` | orquestrador | novo | subset estudos | CRIADO no GitHub + push `52fcd49` (`main`), verificado via `ls-remote` | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
@@ -69,7 +69,7 @@
 - [ ] Melhorias aplicadas (validate prefixos + skills, `evals/estudos.md`, README, package 1.1.0, ADR 0004)
 - [x] Gates finais LIBERADO (`coord-qualidade`, sem CRITICO)
 - [x] Repo `~/opencode-modo-estudos` criado + commit `52fcd49` (34 arquivos; push pendente: sem `gh`/token no runner)
-- [ ] Push final `origin/main`
+- [x] Push final `origin/main` (repo estudos: https://github.com/Gabsz17/opencode-modo-estudos)
 
 Checkpoint a cada retorno de coord: atualizar esta seção + commit local.
 

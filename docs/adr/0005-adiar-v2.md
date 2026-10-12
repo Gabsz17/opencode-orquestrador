@@ -11,6 +11,6 @@
 - Rotina (ciclo-9): changelog passa a cada 3 ciclos (4 fetches seguidos em `v1.19.0`; custo do fetch integral não compensa); próximo devido no ciclo-10.
 - Recheck 2026-10-12 (ciclo-7): changelog segue em `v1.19.0`, sem trigger; matriz PDF segue bloqueada (7 rotas).
 - Recheck 2026-10-12 (ciclo-10): changelog segue em `v1.19.0`, sem trigger.
-- Recheck 2026-10-12 (ciclo-19): changelog segue em `v1.19.0`, sem trigger.
 - Recheck 2026-10-12 (ciclo-13): changelog segue em `v1.19.0`, sem trigger.
+- Recheck 2026-10-12 (ciclo-19): changelog segue em `v1.19.0`, sem trigger.
 - Consequência: zero churn agora; migração mecânica depois (1 script + gate).

@@ -69,8 +69,8 @@
 | 32. CICLO-16: aplicar + gates + sync | orquestrador + coords | ambos | 4 ciclos | LIBERADO + sync | concluído |
 | 33. CICLO-17: Hn-retry + links-internos + commands + stacks | orquestrador + coords | ambos | standing order | Hn 11 rotas; resto LIMPO (0 links, 4/4 cmds, stacks ok) | concluído |
 | 34. CICLO-18: aplicar + gates + sync | orquestrador + coords | ambos | standing order | LIBERADO + sync | concluído |
-| 35. CICLO-19: Hn-retry + inbox + skills + changelog | orquestrador + coords | ambos | standing order | em curso | em curso |
-| 36. CICLO-20: aplicar + gates + sync | orquestrador + coords | ambos | standing order | pendente | pendente |
+| 35. CICLO-19: Hn-retry + inbox + skills + changelog | orquestrador + coords | ambos | standing order | LIBERADO (Hn 12 rotas; resto limpo) | concluído |
+| 36. CICLO-20: aplicar + gates + sync | orquestrador + coords | ambos | standing order | LIBERADO + sync | concluído |
 | Frontend (telas) | — | — | — | N/A: sem UI nesta missão | N/A |
 | Backend (API HTTP) | — | — | — | N/A: sem HTTP nesta missão | N/A |
 
